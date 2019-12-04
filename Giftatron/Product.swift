@@ -14,6 +14,7 @@ class Product {
     var price : Double
     var name : String
     var url : String
+    
     init(_ image: UIImage,_ price: Double, _ name: String, _ url: String) {
         self.image = image
         self.name = name

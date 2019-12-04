@@ -12,13 +12,18 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var gifttronLabel: UILabel!
     
+    @IBOutlet weak var textField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         gifttronLabel.textColor = .green
       
     }
-
+    @IBAction func totheQuiz(_ sender: Any) {
+        
+     
+    }
+    
 
 }
 
