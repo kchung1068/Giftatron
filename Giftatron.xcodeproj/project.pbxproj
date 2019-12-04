@@ -14,6 +14,7 @@
 		07822F77239842DC001CDA18 /* Giftatron.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07822F75239842DC001CDA18 /* Giftatron.xcdatamodeld */; };
 		07822F79239842DD001CDA18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07822F78239842DD001CDA18 /* Assets.xcassets */; };
 		07822F7C239842DD001CDA18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07822F7A239842DD001CDA18 /* LaunchScreen.storyboard */; };
+		14FDCF20239843BE00D596A7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FDCF1F239843BE00D596A7 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		07822F78239842DD001CDA18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07822F7B239842DD001CDA18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07822F7D239842DD001CDA18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14FDCF1F239843BE00D596A7 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				07822F6C239842DC001CDA18 /* AppDelegate.swift */,
 				07822F6E239842DC001CDA18 /* SceneDelegate.swift */,
 				07822F70239842DC001CDA18 /* ViewController.swift */,
+				14FDCF1F239843BE00D596A7 /* Product.swift */,
 				07822F72239842DC001CDA18 /* Main.storyboard */,
 				07822F78239842DD001CDA18 /* Assets.xcassets */,
 				07822F7A239842DD001CDA18 /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				07822F77239842DC001CDA18 /* Giftatron.xcdatamodeld in Sources */,
 				07822F71239842DC001CDA18 /* ViewController.swift in Sources */,
+				14FDCF20239843BE00D596A7 /* Product.swift in Sources */,
 				07822F6D239842DC001CDA18 /* AppDelegate.swift in Sources */,
 				07822F6F239842DC001CDA18 /* SceneDelegate.swift in Sources */,
 			);
