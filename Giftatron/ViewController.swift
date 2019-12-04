@@ -12,13 +12,14 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var gifttronLabel: UILabel!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         gifttronLabel.textColor = .green
       
     }
-
+    func getProducts() {
+        
+    }
 
 }
 
