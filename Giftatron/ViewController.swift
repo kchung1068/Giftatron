@@ -14,7 +14,9 @@ class ViewController: UIViewController {
     let arrayOfProducts: [Product] = []
     @IBOutlet weak var textField: UITextField!
     
+    @IBOutlet weak var giftTextField: UITextField!
     var friendName = ""
+    var gift = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,9 +24,11 @@ class ViewController: UIViewController {
       
     }
     @IBAction func totheQuiz(_ sender: Any) {
-        if let friendName = textField.text {
+        if let friendName = textField.text, let gift = giftTextField.text {
             self.friendName = friendName
+            self.gift = gift
             print(friendName)
+            print(gift)
         }
      
     }
