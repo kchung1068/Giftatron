@@ -9,7 +9,7 @@
 import UIKit
 
 class ResultsViewController: UIViewController, UITableViewDataSource,UITableViewDelegate {
-    
+    let arrayOfProducts: [Product] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,11 +19,15 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
     
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return arrayOfProducts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
+        cell.textLabel?.text = arrayOfProducts[indexPath.row].name
+        cell.imageView?.image = arrayOfProducts[indexPath.row].image
+        cell.detailTextLabel?.text = String(arrayOfProducts[indexPath.row].price)
+        return cell
     }
 
 }
