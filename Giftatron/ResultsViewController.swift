@@ -10,11 +10,13 @@ import UIKit
 
 class ResultsViewController: UIViewController, UITableViewDataSource,UITableViewDelegate {
     
-
+    @IBOutlet weak var resultTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        resultTableView.delegate = self
+        resultTableView.dataSource = self
+        
     }
     
 
@@ -23,7 +25,14 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       return UITableViewCell()
+        if let cell = resultTableView.dequeueReusableCell(withIdentifier: "cell") {
+            cell.textLabel?.text = "placeholder"
+            cell.detailTextLabel?.text = "placeholder"
+            return cell
+        } else {
+            return UITableViewCell()
+        }
+    
     }
 
 }
