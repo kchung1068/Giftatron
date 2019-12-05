@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     @IBAction func totheQuiz(_ sender: Any) {
         if let friendName = textField.text, let gift = giftTextField.text {
             self.friendName = friendName
+            
             self.gift = gift
             print(friendName)
             print(gift)
@@ -37,7 +38,8 @@ class ViewController: UIViewController {
            let url = URL(string: url)!
                    URLSession.shared.dataTask(with: url) { (data, response, error) in
                        if let data = data {
-                           let jsonObject = try? JSONSerialization.jsonObject(with:data,options:JSONSerialization.ReadingOptions.allowFragments)
+//                           let jsonObject = try? JSONSerialization.jsonObject(with:data,options:JSONSerialization.ReadingOptions.allowFragments)
+
                        }
            }
 
