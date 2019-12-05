@@ -14,27 +14,33 @@ class ViewController: UIViewController {
     let arrayOfProducts: [Product] = []
     @IBOutlet weak var textField: UITextField!
     
+    @IBOutlet weak var giftTextField: UITextField!
+    var friendName = ""
+    var gift = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         gifttronLabel.textColor = .green
       
     }
     @IBAction func totheQuiz(_ sender: Any) {
-    func getProducts(url: String) {
-        let url = URL(string: url)!
-                URLSession.shared.dataTask(with: url) { (data, response, error) in
-                    if let data = data {
-                        let jsonObject = try? JSONSerialization.jsonObject(with:data,options:JSONSerialization.ReadingOptions.allowFragments) as? NSArray
-                        for item in jsonObject! {
-                            
-                        }
-                    }
+        if let friendName = textField.text, let gift = giftTextField.text {
+            self.friendName = friendName
+            self.gift = gift
+            print(friendName)
+            print(gift)
         }
-        
      
     }
     
-    }
+    public func getProducts(url: String) {
+           let url = URL(string: url)!
+                   URLSession.shared.dataTask(with: url) { (data, response, error) in
+                       if let data = data {
+                           let jsonObject = try? JSONSerialization.jsonObject(with:data,options:JSONSerialization.ReadingOptions.allowFragments)
+                       }
+           }
 
 }
 
+}
