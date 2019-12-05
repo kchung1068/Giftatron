@@ -9,9 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var gifttronLabel: UILabel!
     
+    @IBOutlet weak var gifttronLabel: UILabel!
+    let arrayOfProducts: [Product] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         gifttronLabel.textColor = .green
@@ -21,11 +21,15 @@ class ViewController: UIViewController {
         let url = URL(string: url)!
                 URLSession.shared.dataTask(with: url) { (data, response, error) in
                     if let data = data {
-                        let jsonObject = try? JSONSerialization.jsonObject(with:data,options:JSONSerialization.ReadingOptions.allowFragments)
+                        let jsonObject = try? JSONSerialization.jsonObject(with:data,options:JSONSerialization.ReadingOptions.allowFragments) as? NSArray
+                        for item in jsonObject! {
+                            
+                        }
                     }
         }
         
     }
+
 
 }
 
