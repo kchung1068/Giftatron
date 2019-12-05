@@ -9,9 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var gifttronLabel: UILabel!
     
+    @IBOutlet weak var gifttronLabel: UILabel!
+    let arrayOfProducts: [Product] = []
     @IBOutlet weak var textField: UITextField!
     
     var friendName = ""
