@@ -9,12 +9,13 @@
 import UIKit
 
 class ResultsViewController: UIViewController, UITableViewDataSource,UITableViewDelegate {
-    let arrayOfProducts: [Product] = []
+    var arrayOfProducts: [Product] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        arrayOfProducts.append(Product(image: UIImage(), price: 20.0, name: "billy", url: "www.google.com"))
+        arrayOfProducts.append(Product(image: UIImage(), price: 50.0, name: "mary", url: "www.google.com"))
+        arrayOfProducts.append(Product(image: UIImage(), price: 100.0, name: "kyle", url: "www.google.com"))
     }
     
 
