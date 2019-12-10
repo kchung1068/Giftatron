@@ -8,7 +8,7 @@
 
 import UIKit
 import SafariServices
-class ViewController: UIViewController, SFSafariViewControllerDelegate {
+class ViewController: UIViewController {
     
     @IBOutlet weak var gifttronLabel: UILabel!
     let arrayOfProducts: [Product] = []
