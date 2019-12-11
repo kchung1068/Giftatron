@@ -23,7 +23,7 @@ class Product {
     init() {
         image = UIImage()
         name = "product"
-        price = 1
+        price = 1.00
         url = "www.google.com"
     }
     
