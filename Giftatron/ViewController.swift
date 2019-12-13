@@ -36,6 +36,7 @@ class ViewController: UIViewController {
                 }
             }
             var giftSearch = ""
+            
             for x in newArray {
                 giftSearch += x
             }
