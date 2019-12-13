@@ -14,6 +14,10 @@
 		07822F77239842DC001CDA18 /* Giftatron.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07822F75239842DC001CDA18 /* Giftatron.xcdatamodeld */; };
 		07822F79239842DD001CDA18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07822F78239842DD001CDA18 /* Assets.xcassets */; };
 		07822F7C239842DD001CDA18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07822F7A239842DD001CDA18 /* LaunchScreen.storyboard */; };
+		1480C2DC23A4188600292A97 /* firstQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480C2DB23A4188600292A97 /* firstQuestionViewController.swift */; };
+		1480C2DE23A418AB00292A97 /* SecondQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480C2DD23A418AB00292A97 /* SecondQuestionViewController.swift */; };
+		1480C2E023A418B900292A97 /* ThirdQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480C2DF23A418B900292A97 /* ThirdQuestionViewController.swift */; };
+		1480C2E223A418D400292A97 /* FourthQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480C2E123A418D300292A97 /* FourthQuestionViewController.swift */; };
 		14875F6F239995160045B89C /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14875F6E239995160045B89C /* ResultsViewController.swift */; };
 		14FDCF20239843BE00D596A7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FDCF1F239843BE00D596A7 /* Product.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +32,10 @@
 		07822F78239842DD001CDA18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07822F7B239842DD001CDA18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07822F7D239842DD001CDA18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1480C2DB23A4188600292A97 /* firstQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstQuestionViewController.swift; sourceTree = "<group>"; };
+		1480C2DD23A418AB00292A97 /* SecondQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondQuestionViewController.swift; sourceTree = "<group>"; };
+		1480C2DF23A418B900292A97 /* ThirdQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdQuestionViewController.swift; sourceTree = "<group>"; };
+		1480C2E123A418D300292A97 /* FourthQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthQuestionViewController.swift; sourceTree = "<group>"; };
 		14875F6E239995160045B89C /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		14FDCF1F239843BE00D596A7 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +76,10 @@
 				14875F6E239995160045B89C /* ResultsViewController.swift */,
 				14FDCF1F239843BE00D596A7 /* Product.swift */,
 				07822F72239842DC001CDA18 /* Main.storyboard */,
+				1480C2DD23A418AB00292A97 /* SecondQuestionViewController.swift */,
+				1480C2DF23A418B900292A97 /* ThirdQuestionViewController.swift */,
+				1480C2E123A418D300292A97 /* FourthQuestionViewController.swift */,
+				1480C2DB23A4188600292A97 /* firstQuestionViewController.swift */,
 				07822F78239842DD001CDA18 /* Assets.xcassets */,
 				07822F7A239842DD001CDA18 /* LaunchScreen.storyboard */,
 				07822F7D239842DD001CDA18 /* Info.plist */,
@@ -147,12 +159,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1480C2DE23A418AB00292A97 /* SecondQuestionViewController.swift in Sources */,
 				07822F77239842DC001CDA18 /* Giftatron.xcdatamodeld in Sources */,
+				1480C2E223A418D400292A97 /* FourthQuestionViewController.swift in Sources */,
 				07822F71239842DC001CDA18 /* ViewController.swift in Sources */,
+				1480C2E023A418B900292A97 /* ThirdQuestionViewController.swift in Sources */,
 				14FDCF20239843BE00D596A7 /* Product.swift in Sources */,
 				07822F6D239842DC001CDA18 /* AppDelegate.swift in Sources */,
 				07822F6F239842DC001CDA18 /* SceneDelegate.swift in Sources */,
 				14875F6F239995160045B89C /* ResultsViewController.swift in Sources */,
+				1480C2DC23A4188600292A97 /* firstQuestionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

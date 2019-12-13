@@ -207,10 +207,10 @@
             </objects>
             <point key="canvasLocation" x="1524.0234375" y="110.68814055636895"/>
         </scene>
-        <!--View Controller-->
+        <!--First Question View Controller-->
         <scene sceneID="hqJ-dj-SRH">
             <objects>
-                <viewController id="gHY-UZ-sss" sceneMemberID="viewController">
+                <viewController id="gHY-UZ-sss" customClass="firstQuestionViewController" customModule="Giftatron" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nvE-0i-oRK">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -240,10 +240,10 @@
             </objects>
             <point key="canvasLocation" x="138.8671875" y="115.95900439238652"/>
         </scene>
-        <!--View Controller-->
+        <!--Second Question View Controller-->
         <scene sceneID="qow-Uo-0MR">
             <objects>
-                <viewController id="c0H-xh-6js" sceneMemberID="viewController">
+                <viewController id="c0H-xh-6js" customClass="SecondQuestionViewController" customModule="Giftatron" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UZN-lt-ZlD">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -255,10 +255,10 @@
             </objects>
             <point key="canvasLocation" x="2976" y="116"/>
         </scene>
-        <!--View Controller-->
+        <!--Fourth Question View Controller-->
         <scene sceneID="6KI-wm-Bia">
             <objects>
-                <viewController id="C3y-tC-uft" sceneMemberID="viewController">
+                <viewController id="C3y-tC-uft" customClass="FourthQuestionViewController" customModule="Giftatron" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="16O-Dn-uvq">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -270,10 +270,10 @@
             </objects>
             <point key="canvasLocation" x="4494" y="111"/>
         </scene>
-        <!--View Controller-->
+        <!--Third Question View Controller-->
         <scene sceneID="OwK-Ue-TAJ">
             <objects>
-                <viewController id="fun-DV-rRd" sceneMemberID="viewController">
+                <viewController id="fun-DV-rRd" customClass="ThirdQuestionViewController" customModule="Giftatron" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vWd-a3-gS0">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
