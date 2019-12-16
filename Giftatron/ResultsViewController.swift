@@ -10,7 +10,11 @@ import UIKit
 
 class ResultsViewController: UIViewController, UITableViewDataSource,UITableViewDelegate {
     var arrayOfProducts: [Product] = []
-
+    var friendName = ""
+    var answer1 = ""
+    var answer2 = ""
+    var answer3 = ""
+    var answer4 = ""
     
     @IBOutlet weak var resultTableView: UITableView!
     
