@@ -9,7 +9,8 @@
 import UIKit
 
 class firstQuestionViewController: UIViewController {
-
+    var friendName = ""
+    var answer1 = ""
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,7 +20,10 @@ class firstQuestionViewController: UIViewController {
 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-      
+        let nvc = segue.destination as! SecondQuestionViewController
+        nvc.friendName = friendName
+        nvc.answer1 = answer1
+        
     }
     
 

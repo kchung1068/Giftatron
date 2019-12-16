@@ -69,5 +69,9 @@ class ViewController: UIViewController {
            }
 
 }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nvc = segue.destination as! firstQuestionViewController
+        nvc.friendName = friendName
+    }
 
 }
