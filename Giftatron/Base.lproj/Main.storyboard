@@ -207,6 +207,21 @@
             </objects>
             <point key="canvasLocation" x="1524.0234375" y="110.68814055636895"/>
         </scene>
+        <!--First Question View Controller-->
+        <scene sceneID="hqJ-dj-SRH">
+            <objects>
+                <viewController id="gHY-UZ-sss" customClass="firstQuestionViewController" customModule="Giftatron" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nvE-0i-oRK">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Q9k-4f-erV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nka-Yf-tGx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2232" y="116"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="cfS-pv-g5Y">
             <objects>
@@ -224,6 +239,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0aS-en-rBs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138.8671875" y="115.95900439238652"/>
+        </scene>
+        <!--Second Question View Controller-->
+        <scene sceneID="qow-Uo-0MR">
+            <objects>
+                <viewController id="c0H-xh-6js" customClass="SecondQuestionViewController" customModule="Giftatron" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UZN-lt-ZlD">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="dfc-YZ-gPi"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="suP-at-X6u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2976" y="116"/>
+        </scene>
+        <!--Fourth Question View Controller-->
+        <scene sceneID="6KI-wm-Bia">
+            <objects>
+                <viewController id="C3y-tC-uft" customClass="FourthQuestionViewController" customModule="Giftatron" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="16O-Dn-uvq">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="s6A-zK-Ki4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2rY-p8-0TZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4494" y="111"/>
+        </scene>
+        <!--Third Question View Controller-->
+        <scene sceneID="OwK-Ue-TAJ">
+            <objects>
+                <viewController id="fun-DV-rRd" customClass="ThirdQuestionViewController" customModule="Giftatron" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vWd-a3-gS0">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="X0n-Ml-osQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bs3-eO-QI3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3679" y="111"/>
         </scene>
     </scenes>
     <resources>
