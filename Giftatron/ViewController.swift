@@ -43,7 +43,7 @@ class ViewController: UIViewController {
             self.gift = gift
             let url = URL(string: "http://www.amazon.com/s?k=\(giftSearch)")!
             let vc = SFSafariViewController(url: url)
-            present(vc, animated: true, completion: nil)
+           // present(vc, animated: true, completion: nil)
             print(friendName)
             print(gift)
         }
