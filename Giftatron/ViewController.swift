@@ -6,6 +6,12 @@
 //  Copyright © 2019 John Hersey High School. All rights reserved.
 //
 
+// sudo gem install cocoapods
+//pod setup
+// cd projects
+// pod init
+//pico podfile
+// pod install
 import UIKit
 import SafariServices
 class ViewController: UIViewController, SFSafariViewControllerDelegate {
