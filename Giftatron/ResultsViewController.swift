@@ -23,6 +23,8 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
         resultTableView.delegate = self
         resultTableView.dataSource = self
         
+        
+        
         arrayOfProducts.append(Product(image: UIImage(named: "Santahat")!, price: 20.0, name: "billy", url: "www.google.com"))
         arrayOfProducts.append(Product(image: UIImage(), price: 50.0, name: "mary", url: "www.google.com"))
         arrayOfProducts.append(Product(image: UIImage(), price: 100.0, name: "kyle", url: "www.google.com"))
