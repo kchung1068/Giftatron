@@ -16,7 +16,9 @@ class firstQuestionViewController: UIViewController {
 
       
     }
-    
+    func clickedAnswerButton(sender: UIButton) {
+        arrayOfAnswers.append(sender.titleLabel!.text!)
+    }
 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
