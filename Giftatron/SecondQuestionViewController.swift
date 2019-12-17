@@ -12,13 +12,20 @@ class SecondQuestionViewController: UIViewController {
     var friendName = ""
     var answer1 = ""
     var answer2 = ""
+    
+    @IBOutlet weak var segue: UIButton!
+    
+    @IBOutlet weak var zeroThreeOutlet: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        segue.alpha = 0
     }
     
-
+    @IBAction func zeroThree(_ sender: Any) {
+    }
+    
 
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -26,6 +33,9 @@ class SecondQuestionViewController: UIViewController {
         nvc.friendName = friendName
         nvc.answer1 = answer1
         nvc.answer2 = answer2
+        print(friendName)
+        print(answer1)
+        print(answer2)
     }
     
 

@@ -33,6 +33,11 @@ class FourthQuestionViewController: UIViewController {
         nvc.answer2 = answer2
         nvc.answer3 = answer3
         nvc.answer4 = answer4
+        print(friendName)
+               print(answer1)
+        print(answer2)
+        print(answer3)
+        print(answer4)
     }
     
 
