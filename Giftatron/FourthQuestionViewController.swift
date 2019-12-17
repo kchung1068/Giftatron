@@ -10,10 +10,7 @@ import UIKit
 
 class FourthQuestionViewController: UIViewController {
     var friendName = ""
-    var answer1 = ""
-    var answer2 = ""
-    var answer3 = ""
-    var answer4 = ""
+    var arrayOfAnswers: [String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -38,6 +35,8 @@ class FourthQuestionViewController: UIViewController {
         print(answer2)
         print(answer3)
         print(answer4)
+        nvc.arrayOfAnswers = arrayOfAnswers
+
     }
     
 

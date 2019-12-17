@@ -10,9 +10,7 @@ import UIKit
 
 class ThirdQuestionViewController: UIViewController {
     var friendName = ""
-    var answer1 = ""
-    var answer2 = ""
-    var answer3 = ""
+    var arrayOfAnswers: [String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,6 +33,8 @@ class ThirdQuestionViewController: UIViewController {
         print(answer3)
         
         
+        nvc.arrayOfAnswers = arrayOfAnswers
+
     }
     
 

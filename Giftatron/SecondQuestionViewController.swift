@@ -17,6 +17,7 @@ class SecondQuestionViewController: UIViewController {
     
     @IBOutlet weak var zeroThreeOutlet: UIButton!
     
+    var arrayOfAnswers: [String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,6 +37,8 @@ class SecondQuestionViewController: UIViewController {
         print(friendName)
         print(answer1)
         print(answer2)
+        nvc.arrayOfAnswers = arrayOfAnswers
+
     }
     
 

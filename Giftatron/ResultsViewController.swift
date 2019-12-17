@@ -15,6 +15,8 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
     var answer2 = ""
     var answer3 = ""
     var answer4 = ""
+    var arrayOfAnswers: [String] = []
+
     
     @IBOutlet weak var resultTableView: UITableView!
     
@@ -28,6 +30,10 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
         arrayOfProducts.append(Product(image: UIImage(named: "Santahat")!, price: 20.0, name: "billy", url: "www.google.com"))
         arrayOfProducts.append(Product(image: UIImage(), price: 50.0, name: "mary", url: "www.google.com"))
         arrayOfProducts.append(Product(image: UIImage(), price: 100.0, name: "kyle", url: "www.google.com"))
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        navigationController?.navigationBar.topItem?.title = "Showing Results for " + friendName
+        print(friendName)
     }
     
 
