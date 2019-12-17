@@ -30,32 +30,34 @@ class ViewController: UIViewController {
       
     }
     @IBAction func totheQuiz(_ sender: Any) {
-        if let friendName = textField.text, let gift = giftTextField.text {
-            self.friendName = friendName
-            let giftArray = Array(gift)
-            var newArray: [String] = []
-            for x in giftArray {
-                if x != " " {
-                    newArray.append("\(x)")
-                }else {
-                    newArray.append("+")
-                }
-            }
-            var giftSearch = ""
-            
-            for x in newArray {
-                giftSearch += x
-            }
-            self.gift = gift
-//            let url = URL(string: "http://www.amazon.com/s?k=\(giftSearch)")!
-//            let vc = SFSafariViewController(url: url)
-//            present(vc, animated: true, completion: nil)
-            print(friendName)
-            print(gift)
+        hollyHello()
         }
-     
+    func hollyHello() {
+                if let friendName = textField.text, let gift = giftTextField.text {
+                    self.friendName = friendName
+                    let giftArray = Array(gift)
+                    var newArray: [String] = []
+                    for x in giftArray {
+                        if x != " " {
+                            newArray.append("\(x)")
+                        }else {
+                            newArray.append("+")
+                        }
+                    }
+                    var giftSearch = ""
+                    
+                    for x in newArray {
+                        giftSearch += x
+                    }
+                    self.gift = gift
+        //            let url = URL(string: "http://www.amazon.com/s?k=\(giftSearch)")!
+        //            let vc = SFSafariViewController(url: url)
+        //            present(vc, animated: true, completion: nil)
+                    print(friendName)
+                    print(gift)
+
         
-        
+        }
     }
     
     
@@ -71,6 +73,9 @@ class ViewController: UIViewController {
 }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let nvc = segue.destination as! firstQuestionViewController
+        hollyHello()
+        
+        print(friendName)
         nvc.friendName = friendName
     }
 

@@ -21,6 +21,7 @@ class firstQuestionViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let nvc = segue.destination as! SecondQuestionViewController
+        print(friendName)
         nvc.friendName = friendName
         nvc.answer1 = answer1
         
