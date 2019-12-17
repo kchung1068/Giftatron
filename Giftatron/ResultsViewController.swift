@@ -15,6 +15,8 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
     var answer2 = ""
     var answer3 = ""
     var answer4 = ""
+    var arrayOfAnswers: [String] = []
+
     
     @IBOutlet weak var resultTableView: UITableView!
     

@@ -10,8 +10,7 @@ import UIKit
 
 class SecondQuestionViewController: UIViewController {
     var friendName = ""
-    var answer1 = ""
-    var answer2 = ""
+    var arrayOfAnswers: [String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,8 +24,8 @@ class SecondQuestionViewController: UIViewController {
         let nvc = segue.destination as! ThirdQuestionViewController
         nvc.friendName = friendName
         print(friendName)
-        nvc.answer1 = answer1
-        nvc.answer2 = answer2
+        nvc.arrayOfAnswers = arrayOfAnswers
+
     }
     
 
