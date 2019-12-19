@@ -11,14 +11,14 @@ import UIKit
 class firstQuestionViewController: UIViewController {
     var friendName = ""
     var answer1 = ""
-    
+     var arrayOfAnswers: [String] = []
     @IBOutlet weak var maleOutlet: UIButton!
     
     @IBOutlet weak var otherOutlet: UIButton!
     @IBOutlet weak var segue: UIButton!
     @IBOutlet weak var femaleOutlet: UIButton!
     
-    var arrayOfAnswers: [String] = []
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         segue.alpha = 0
@@ -68,6 +68,7 @@ class firstQuestionViewController: UIViewController {
         let nvc = segue.destination as! SecondQuestionViewController
         print(friendName)
         nvc.friendName = friendName
+        nvc.answer1 = answer1
         nvc.arrayOfAnswers = arrayOfAnswers
         
         print(friendName)

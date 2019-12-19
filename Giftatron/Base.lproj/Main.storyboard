@@ -335,6 +335,33 @@
                                     <action selector="zeroThree:" destination="c0H-xh-6js" eventType="touchUpInside" id="9JP-uK-cTK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58f-Bi-kqH">
+                                <rect key="frame" x="316" y="649" width="153" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="3-10 years"/>
+                                <connections>
+                                    <action selector="threeTen:" destination="c0H-xh-6js" eventType="touchUpInside" id="z1f-oR-9gn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p93-Ni-TjH">
+                                <rect key="frame" x="624" y="651" width="158" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="10-18 years"/>
+                                <connections>
+                                    <action selector="tenEighteen:" destination="c0H-xh-6js" eventType="touchUpInside" id="TQ6-10-TLJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAw-mZ-QnG">
+                                <rect key="frame" x="172" y="744" width="242" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="18-50 years"/>
+                                <connections>
+                                    <action selector="eighteenFifty:" destination="c0H-xh-6js" eventType="touchUpInside" id="BAr-r8-bS6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="dfc-YZ-gPi"/>
@@ -342,6 +369,8 @@
                     <navigationItem key="navigationItem" id="Hcu-1e-a52"/>
                     <connections>
                         <outlet property="segue" destination="HO9-xM-9lD" id="eu6-Du-ObG"/>
+                        <outlet property="tenEighteenOutlet" destination="p93-Ni-TjH" id="DFS-my-GnR"/>
+                        <outlet property="threeTenOutlet" destination="58f-Bi-kqH" id="5XB-PL-Tl3"/>
                         <outlet property="zeroThreeOutlet" destination="hqz-tU-Tmp" id="hpo-Ee-oht"/>
                     </connections>
                 </viewController>
@@ -365,15 +394,66 @@
                                     <segue destination="5rM-GQ-8mK" kind="show" id="5Lz-UD-xQ1"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is your friend most passionate about?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoY-Eu-kVJ">
+                                <rect key="frame" x="245" y="196" width="424" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rW-HF-rQY">
+                                <rect key="frame" x="65" y="548" width="124" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Beauty/Cosmetics"/>
+                                <connections>
+                                    <action selector="beauty:" destination="C3y-tC-uft" eventType="touchUpInside" id="W4n-wv-xXT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ShH-Mt-Wuf">
+                                <rect key="frame" x="318" y="548" width="153" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Electronic/Technology"/>
+                                <connections>
+                                    <action selector="electronic:" destination="C3y-tC-uft" eventType="touchUpInside" id="zer-fb-xV9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbZ-gN-x7N">
+                                <rect key="frame" x="704" y="548" width="74" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Music/Arts"/>
+                                <connections>
+                                    <action selector="music:" destination="C3y-tC-uft" eventType="touchUpInside" id="Ufi-B0-lpa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1c-nC-Xkx">
+                                <rect key="frame" x="133" y="668" width="115" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Gaming"/>
+                                <connections>
+                                    <action selector="gaming:" destination="C3y-tC-uft" eventType="touchUpInside" id="VEi-fB-c2J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXu-Y5-wM4">
+                                <rect key="frame" x="473" y="668" width="143" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="English/Mathematics"/>
+                                <connections>
+                                    <action selector="english:" destination="C3y-tC-uft" eventType="touchUpInside" id="kDz-My-4OZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="s6A-zK-Ki4"/>
                     </view>
                     <navigationItem key="navigationItem" id="VkW-ww-VQW"/>
+                    <connections>
+                        <outlet property="segue" destination="V3S-f0-pDA" id="oea-Xy-ZwB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2rY-p8-0TZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3821" y="140"/>
+            <point key="canvasLocation" x="3820.8984374999995" y="139.67789165446558"/>
         </scene>
         <!--Third Question View Controller-->
         <scene sceneID="OwK-Ue-TAJ">
@@ -391,15 +471,62 @@
                                     <segue destination="C3y-tC-uft" kind="show" id="bl0-i6-Mjm"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How much money are you willing to spend?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qVE-U9-piA">
+                                <rect key="frame" x="223" y="151" width="605" height="262"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIE-cz-Whu">
+                                <rect key="frame" x="111" y="578" width="129" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="$0-$10"/>
+                                <connections>
+                                    <action selector="zeroTen:" destination="fun-DV-rRd" eventType="touchUpInside" id="mXw-DQ-4Z0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAN-LK-Pbi">
+                                <rect key="frame" x="591" y="608" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="$50-$100"/>
+                                <connections>
+                                    <action selector="fiftyHundred:" destination="fun-DV-rRd" eventType="touchUpInside" id="waC-E3-lFP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oy9-aw-ecT">
+                                <rect key="frame" x="604" y="799" width="45" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="$100+"/>
+                                <connections>
+                                    <action selector="hundredPlus:" destination="fun-DV-rRd" eventType="touchUpInside" id="6NY-bJ-348"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2HX-Rc-Gmr">
+                                <rect key="frame" x="111" y="782" width="115" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="$10-$50"/>
+                                <connections>
+                                    <action selector="tenFifty:" destination="fun-DV-rRd" eventType="touchUpInside" id="Gfp-y1-BoR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="X0n-Ml-osQ"/>
                     </view>
                     <navigationItem key="navigationItem" id="bGc-UA-s2K"/>
+                    <connections>
+                        <outlet property="fiftyHundredOutlet" destination="yAN-LK-Pbi" id="Brw-No-PxM"/>
+                        <outlet property="hundredPlusOutlet" destination="Oy9-aw-ecT" id="72O-z7-azc"/>
+                        <outlet property="segue" destination="4iJ-tg-Oqb" id="ewl-mW-Gdr"/>
+                        <outlet property="tenFiftyOutlet" destination="2HX-Rc-Gmr" id="4eN-mg-KDc"/>
+                        <outlet property="zeroTenOutlet" destination="DIE-cz-Whu" id="Dt5-ip-Qaa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bs3-eO-QI3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3110" y="116"/>
+            <point key="canvasLocation" x="3109.5703125" y="115.95900439238652"/>
         </scene>
     </scenes>
     <resources>
