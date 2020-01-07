@@ -22,7 +22,9 @@ class firstQuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         segue.alpha = 0
-      
+        maleOutlet.frame.size = CGSize(width: 194, height: 137)
+        femaleOutlet.frame.size = CGSize(width: 194, height: 137)
+        otherOutlet.frame.size = CGSize(width: 194, height: 137)
     }
     
     @IBAction func maleButton(_ sender: Any) {
@@ -75,7 +77,7 @@ class firstQuestionViewController: UIViewController {
         nvc.answer1 = answer1
         nvc.arrayOfAnswers = arrayOfAnswers
         
-        print(friendName)
+     
         print(answer1)
         
     }

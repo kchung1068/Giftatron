@@ -17,13 +17,22 @@ class FourthQuestionViewController: UIViewController {
     var arrayOfAnswers: [String] = []
     @IBOutlet weak var segue: UIButton!
     
+    @IBOutlet weak var beautyOutlet: UIButton!
+    @IBOutlet weak var electronicOutlet: UIButton!
+    @IBOutlet weak var musicOutlet: UIButton!
+    @IBOutlet weak var gamingOutlet: UIButton!
+    @IBOutlet weak var englishOutlet: UIButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         segue.alpha = 0
         
     }
     
-    @IBAction func beauty(_ sender: Any) { segue.alpha = 1
+    @IBAction func beauty(_ sender: Any) {
+        segue.alpha = 1
         answer4 = "Beauty"
     }
     
@@ -60,7 +69,12 @@ class FourthQuestionViewController: UIViewController {
         arrayOfAnswers.append(answer2)
         arrayOfAnswers.append(answer3)
         arrayOfAnswers.append(answer4)
-        print(friendName)
+         print(friendName)
+                      print(answer1)
+                      print(answer2)
+               print(answer3)
+        print(answer4)
+        print(arrayOfAnswers)
         nvc.arrayOfAnswers = arrayOfAnswers
     }
     
