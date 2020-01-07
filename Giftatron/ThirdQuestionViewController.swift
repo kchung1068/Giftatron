@@ -63,8 +63,8 @@ class ThirdQuestionViewController: UIViewController {
         answer3 = "$50-100"
         zeroTenOutlet.setTitleColor(.black, for: .normal)
                zeroTenOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
-               tenFiftyOutlet.setTitleColor(.green, for: .normal)
-               tenFiftyOutlet.setBackgroundImage(UIImage(named: "Orange Circle"), for: .normal)
+               tenFiftyOutlet.setTitleColor(.black, for: .normal)
+               tenFiftyOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
         fiftyHundredOutlet.setTitleColor(.green, for: .normal)
         fiftyHundredOutlet.setBackgroundImage(UIImage(named: "Orange Circle"), for: .normal)
         hundredPlusOutlet.setTitleColor(.black, for: .normal)
@@ -75,10 +75,10 @@ class ThirdQuestionViewController: UIViewController {
         segue.alpha = 1
         zeroTenOutlet.setTitleColor(.black, for: .normal)
         zeroTenOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
-            tenFiftyOutlet.setTitleColor(.green, for: .normal)
-            tenFiftyOutlet.setBackgroundImage(UIImage(named: "Orange Circle"), for: .normal)
-               fiftyHundredOutlet.setTitleColor(.green, for: .normal)
-               fiftyHundredOutlet.setBackgroundImage(UIImage(named: "Orange Circle"), for: .normal)
+        tenFiftyOutlet.setTitleColor(.black, for: .normal)
+            tenFiftyOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
+               fiftyHundredOutlet.setTitleColor(.black, for: .normal)
+               fiftyHundredOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
         answer3 = "$100+"
         hundredPlusOutlet.setTitleColor(.green, for: .normal)
         hundredPlusOutlet.setBackgroundImage(UIImage(named: "Orange Circle"), for: .normal)
