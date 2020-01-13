@@ -25,7 +25,11 @@ class SecondQuestionViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        zeroThreeOutlet.frame.size = CGSize(width: 197, height: 137)
+        threeTenOutlet.frame.size = CGSize(width: 197, height: 137)
+        tenEighteenOutlet.frame.size = CGSize(width: 197, height: 137)
         eighteenFiftyOutlet.frame.size = CGSize(width: 197, height: 137)
+        
         segue.alpha = 0
     }
     
