@@ -28,7 +28,11 @@ class FourthQuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         segue.alpha = 0
-        
+        beautyOutlet.frame.size = CGSize(width: 267, height: 137)
+        electronicOutlet.frame.size = CGSize(width: 307, height: 137)
+        musicOutlet.frame.size = CGSize(width: 267, height: 137)
+        gamingOutlet.frame.size = CGSize(width: 267, height: 137)
+        englishOutlet.frame.size = CGSize(width: 267, height: 137)
     }
     
     @IBAction func beauty(_ sender: Any) {
