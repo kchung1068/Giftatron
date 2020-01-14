@@ -35,6 +35,7 @@ class ViewController: UIViewController {
     func hollyHello() {
                 if let friendName = textField.text, let gift = giftTextField.text {
                     self.friendName = friendName
+                    
                     let giftArray = Array(gift)
                     var newArray: [String] = []
                     for x in giftArray {
@@ -75,8 +76,9 @@ class ViewController: UIViewController {
         let nvc = segue.destination as! firstQuestionViewController
         hollyHello()
         
-        print(friendName)
+        
         nvc.friendName = friendName
+        
     }
 
 }

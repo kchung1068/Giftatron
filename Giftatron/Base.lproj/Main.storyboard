@@ -255,14 +255,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jxd-VV-JoG">
-                                <rect key="frame" x="785" y="1227" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="c0H-xh-6js" kind="show" id="VuB-Eg-sKr"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What's your friend's gender?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iza-0L-I5L">
                                 <rect key="frame" x="185" y="304" width="470" height="249"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -302,6 +294,17 @@
                                 </state>
                                 <connections>
                                     <action selector="otherButton:" destination="gHY-UZ-sss" eventType="touchUpInside" id="rzt-gg-e7k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jxd-VV-JoG">
+                                <rect key="frame" x="515" y="1021" width="512" height="404"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <state key="normal" title="Go On To The Next Page" backgroundImage="Next">
+                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="c0H-xh-6js" kind="show" id="VuB-Eg-sKr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -347,9 +350,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HO9-xM-9lD">
-                                <rect key="frame" x="736" y="1188" width="46" height="30"/>
+                                <rect key="frame" x="506" y="1102" width="508" height="264"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <state key="normal" title="Go On To The Next Page" backgroundImage="Right"/>
                                 <connections>
                                     <segue destination="fun-DV-rRd" kind="show" id="0MI-Sq-fIP"/>
                                 </connections>
@@ -431,14 +435,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3S-f0-pDA">
-                                <rect key="frame" x="859" y="1229" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="5rM-GQ-8mK" kind="show" id="5Lz-UD-xQ1"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is your friend most passionate about?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoY-Eu-kVJ">
                                 <rect key="frame" x="245" y="196" width="424" height="207"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -502,6 +498,17 @@
                                     <action selector="electronic:" destination="C3y-tC-uft" eventType="touchUpInside" id="zer-fb-xV9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3S-f0-pDA">
+                                <rect key="frame" x="496" y="1141" width="528" height="224"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <state key="normal" title="Continue" backgroundImage="camera" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5rM-GQ-8mK" kind="show" id="5Lz-UD-xQ1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="s6A-zK-Ki4"/>
@@ -528,14 +535,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iJ-tg-Oqb">
-                                <rect key="frame" x="820" y="1208" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="C3y-tC-uft" kind="show" id="bl0-i6-Mjm"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How much money are you willing to spend?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qVE-U9-piA">
                                 <rect key="frame" x="223" y="151" width="605" height="262"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -588,6 +587,17 @@
                                     <action selector="hundredPlus:" destination="fun-DV-rRd" eventType="touchUpInside" id="6NY-bJ-348"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iJ-tg-Oqb">
+                                <rect key="frame" x="516" y="1069" width="508" height="297"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <state key="normal" title="Go On To The Next Page" backgroundImage="Bright">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="C3y-tC-uft" kind="show" id="bl0-i6-Mjm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="X0n-Ml-osQ"/>
@@ -607,20 +617,24 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Bright" width="217" height="217"/>
         <image name="Cyan Circle" width="420" height="420"/>
         <image name="Gray Circle" width="256" height="254"/>
         <image name="Green Circle" width="228" height="220"/>
         <image name="Hat" width="248" height="392"/>
         <image name="Magenta Circle" width="460" height="460"/>
         <image name="Navy Blue Circle" width="225" height="223"/>
+        <image name="Next" width="512" height="404"/>
         <image name="Orange Circle" width="572" height="595"/>
         <image name="Pink Circle" width="1917" height="1920"/>
         <image name="Purple Circle" width="441" height="437"/>
         <image name="Red Circle" width="782" height="785"/>
+        <image name="Right" width="119" height="119"/>
         <image name="Santahat" width="230" height="158"/>
         <image name="White Circle" width="379" height="380"/>
         <image name="Yellow Circle" width="195" height="194"/>
         <image name="arrowshape.turn.up.right" catalog="system" width="64" height="52"/>
+        <image name="camera" catalog="system" width="64" height="48"/>
         <image name="celebration" width="512" height="512"/>
         <image name="money" width="1547" height="1593"/>
     </resources>
