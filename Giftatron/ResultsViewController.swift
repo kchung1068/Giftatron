@@ -49,5 +49,20 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
             return UITableViewCell()
         }
     }
+    func addNewItem() {
+        let alert = UIAlertController(title: "New Item", message: "enter your item name below", preferredStyle: .alert)
+        alert.addTextField { (TextField) in
+        }
+        alert.addTextField { (TextField2) in
+        }
+        alert.addTextField { (TextField3) in
+        }
+        let OK = UIAlertAction(title: "Mikey", style: .destructive) { (OK) in
+            let item = Product(image: UIImage(), price: Double(alert.textFields![0].text!)!, name: alert.textFields![1].text!, url: alert.textFields![2].text!)
+            self.arrayOfProducts.append(item)
+            self.resultTableView.reloadData()
+        }
+        alert.addAction(OK)
+    }
 
 }
