@@ -64,5 +64,8 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
         }
         alert.addAction(OK)
     }
-
+    @IBAction func pressedAddButton(_ sender: UIBarButtonItem) {
+        addNewItem()
+    }
+    
 }

@@ -198,7 +198,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cxZ-iS-YGq"/>
                     </view>
-                    <navigationItem key="navigationItem" id="5uP-8g-FVe"/>
+                    <navigationItem key="navigationItem" id="5uP-8g-FVe">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="AOv-RK-PvK">
+                            <connections>
+                                <action selector="pressedAddButton:" destination="5rM-GQ-8mK" id="vhq-ba-bRH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="resultTableView" destination="lSb-U1-ucx" id="Y9L-y1-7g2"/>
                     </connections>
