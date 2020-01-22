@@ -30,7 +30,7 @@
                                                 <color key="backgroundColor" red="0.31283284432553027" green="1" blue="0.17531925519371794" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hat" translatesAutoresizingMaskIntoConstraints="NO" id="9qd-uZ-xvb">
-                                                <rect key="frame" x="669.5" y="0.0" width="334.5" height="100"/>
+                                                <rect key="frame" x="669.5" y="0.0" width="334.5" height="100.00000000000011"/>
                                                 <color key="backgroundColor" red="0.49530636756098079" green="0.67958184008270572" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
                                         </subviews>
@@ -56,33 +56,33 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="NIZ-My-mzz">
-                                        <rect key="frame" x="0.0" y="270" width="1004" height="842.5"/>
+                                        <rect key="frame" x="0.0" y="270" width="1004" height="746"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SS" translatesAutoresizingMaskIntoConstraints="NO" id="bgH-sm-5Uc">
-                                                <rect key="frame" x="0.0" y="0.0" width="1004" height="842.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="1004" height="746"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of friend" textAlignment="natural" minimumFontSize="17" id="ucz-5J-Vs6">
-                                        <rect key="frame" x="0.0" y="1122.5" width="1004" height="56"/>
+                                        <rect key="frame" x="0.0" y="1026" width="1004" height="56"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Already know what you want, enter that here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6ra-wv-6X9">
-                                        <rect key="frame" x="0.0" y="1188.5" width="1004" height="56"/>
+                                        <rect key="frame" x="0.0" y="1092" width="1004" height="56"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5zF-gl-6nE">
-                                        <rect key="frame" x="0.0" y="1254.5" width="1004" height="61.5"/>
+                                        <rect key="frame" x="0.0" y="1158" width="1004" height="158"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Santahat" translatesAutoresizingMaskIntoConstraints="NO" id="pGl-Ko-fzq">
-                                                <rect key="frame" x="0.0" y="0.0" width="502" height="61.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="502" height="158"/>
                                                 <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FpZ-de-uDO">
-                                                <rect key="frame" x="502" y="1" width="502" height="59"/>
+                                                <rect key="frame" x="502" y="1" width="502" height="155.5"/>
                                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="49"/>
                                                 <state key="normal" title="To Quiz" backgroundImage="arrowshape.turn.up.right" catalog="system">
@@ -615,6 +615,28 @@
                                     <segue destination="C3y-tC-uft" kind="show" id="bl0-i6-Mjm"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Salevector" translatesAutoresizingMaskIntoConstraints="NO" id="udv-2Z-eFj">
+                                <rect key="frame" x="0.0" y="1130" width="313" height="236"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dollar Sign" translatesAutoresizingMaskIntoConstraints="NO" id="tKo-Ou-EZz">
+                                <rect key="frame" x="-123" y="743" width="358" height="191"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Eagle Gold" translatesAutoresizingMaskIntoConstraints="NO" id="r0r-8y-q0g">
+                                <rect key="frame" x="322" y="842" width="310" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d4u-OW-2rU">
+                                <rect key="frame" x="184" y="1054" width="353" height="312"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aAy-b6-N9V">
+                                <rect key="frame" x="614" y="716" width="390" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.2193754562387269" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="X0n-Ml-osQ"/>
@@ -635,11 +657,14 @@
     </scenes>
     <resources>
         <image name="Bright" width="217" height="217"/>
+        <image name="Dollar Sign" width="234" height="388"/>
+        <image name="Eagle Gold" width="565" height="563"/>
         <image name="Gray Circle" width="256" height="254"/>
         <image name="Hat" width="248" height="392"/>
         <image name="Next" width="512" height="404"/>
         <image name="Right" width="119" height="119"/>
         <image name="SS" width="532" height="338"/>
+        <image name="Salevector" width="920" height="907"/>
         <image name="Santahat" width="230" height="158"/>
         <image name="arrowshape.turn.up.right" catalog="system" width="64" height="52"/>
         <image name="arrowshape.turn.up.right.fill" catalog="system" width="64" height="52"/>
