@@ -19,34 +19,34 @@
                                 <rect key="frame" x="0.0" y="20" width="1004" height="1346"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lv5-ht-HJN">
-                                        <rect key="frame" x="0.0" y="0.0" width="1004" height="512"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1004" height="1024"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="celebration" translatesAutoresizingMaskIntoConstraints="NO" id="bPb-mB-7Su">
-                                                <rect key="frame" x="0.0" y="0.0" width="334.5" height="512"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="334.5" height="1024"/>
                                                 <color key="backgroundColor" red="0.98039215690000003" green="0.94988433017794671" blue="0.56721944263616841" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="money" translatesAutoresizingMaskIntoConstraints="NO" id="T7J-tZ-QQN">
-                                                <rect key="frame" x="334.5" y="0.0" width="335" height="512"/>
+                                                <rect key="frame" x="334.5" y="0.0" width="335" height="1024"/>
                                                 <color key="backgroundColor" red="0.31283284432553027" green="1" blue="0.17531925519371794" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hat" translatesAutoresizingMaskIntoConstraints="NO" id="9qd-uZ-xvb">
-                                                <rect key="frame" x="669.5" y="0.0" width="334.5" height="512.00000000000011"/>
+                                                <rect key="frame" x="669.5" y="0.0" width="334.5" height="1024"/>
                                                 <color key="backgroundColor" red="0.49530636756098079" green="0.67958184008270572" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gift-A-Tron!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1F-vQ-48e">
-                                        <rect key="frame" x="0.0" y="522" width="1004" height="99.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Gift-A-Tron!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1F-vQ-48e">
+                                        <rect key="frame" x="0.0" y="1034" width="1004" height="98.5"/>
                                         <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="83"/>
                                         <color key="textColor" red="0.67107929112198494" green="0.78039215689999997" blue="0.15777290746950148" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="NIZ-My-mzz">
-                                        <rect key="frame" x="0.0" y="631.5" width="1004" height="511"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="NIZ-My-mzz">
+                                        <rect key="frame" x="0.0" y="1142.5" width="1004" height="0.0"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pCg-M5-QVx">
-                                                <rect key="frame" x="0.0" y="0.0" width="1004" height="511"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="1004" height="0.0"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fVT-Ac-IId">
                                                         <rect key="frame" x="-10" y="98" width="1024" height="498"/>
@@ -115,12 +115,12 @@
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of friend" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ucz-5J-Vs6">
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of friend" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ucz-5J-Vs6">
                                         <rect key="frame" x="0.0" y="1152.5" width="1004" height="56"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter gift you want here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6ra-wv-6X9">
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter gift you want here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6ra-wv-6X9">
                                         <rect key="frame" x="0.0" y="1218.5" width="1004" height="56"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -217,7 +217,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cxZ-iS-YGq"/>
                     </view>
-                    <navigationItem key="navigationItem" id="5uP-8g-FVe"/>
+                    <navigationItem key="navigationItem" id="5uP-8g-FVe">
+                        <nil key="title"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="SiL-n5-Wn8"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="resultTableView" destination="lSb-U1-ucx" id="Y9L-y1-7g2"/>
                     </connections>
@@ -597,6 +600,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m4i-iw-qLm">
+                                <rect key="frame" x="0.0" y="942" width="400" height="255"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.87562148707921716" green="1" blue="0.2157935957190652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w2b-iu-SOK">
+                                <rect key="frame" x="408" y="1102" width="358" height="264"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.17731847918783461" green="1" blue="0.14530324460618593" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gold Vector" translatesAutoresizingMaskIntoConstraints="NO" id="VnT-nX-5d9">
+                                <rect key="frame" x="418" y="864" width="298" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V7n-Mr-bso">
+                                <rect key="frame" x="592" y="728" width="432" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.68379464710253068" blue="0.10355651440067393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Moneynati" translatesAutoresizingMaskIntoConstraints="NO" id="c1r-wL-Omz">
+                                <rect key="frame" x="-31" y="1192" width="350" height="174"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Eagle Gold" translatesAutoresizingMaskIntoConstraints="NO" id="G17-rV-Cqk">
+                                <rect key="frame" x="694" y="966" width="330" height="247"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pot Gold" translatesAutoresizingMaskIntoConstraints="NO" id="Bdx-VI-Rxd">
+                                <rect key="frame" x="124" y="676" width="342" height="229"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Salevector" translatesAutoresizingMaskIntoConstraints="NO" id="kGr-P5-EvN">
+                                <rect key="frame" x="151" y="966" width="332" height="247"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dollar Sign" translatesAutoresizingMaskIntoConstraints="NO" id="6RG-Y5-SY1">
+                                <rect key="frame" x="-220" y="775" width="565" height="217"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How much money are you willing to spend?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qVE-U9-piA">
                                 <rect key="frame" x="124" y="151" width="780" height="262"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -681,17 +723,23 @@
     <resources>
         <image name="Bright" width="217" height="217"/>
         <image name="Cyan Circle" width="420" height="420"/>
+        <image name="Dollar Sign" width="234" height="388"/>
+        <image name="Eagle Gold" width="565" height="563"/>
+        <image name="Gold Vector" width="163" height="157"/>
         <image name="Gray Circle" width="256" height="254"/>
         <image name="Green Circle" width="228" height="220"/>
         <image name="Hat" width="248" height="392"/>
         <image name="Magenta Circle" width="460" height="460"/>
+        <image name="Moneynati" width="275" height="183"/>
         <image name="Navy Blue Circle" width="225" height="223"/>
         <image name="Next" width="512" height="404"/>
         <image name="Orange Circle" width="572" height="595"/>
         <image name="Pink Circle" width="1917" height="1920"/>
+        <image name="Pot Gold" width="408" height="450"/>
         <image name="Purple Circle" width="441" height="437"/>
         <image name="Red Circle" width="782" height="785"/>
         <image name="Right" width="119" height="119"/>
+        <image name="Salevector" width="920" height="907"/>
         <image name="Santahat" width="230" height="158"/>
         <image name="White Circle" width="379" height="380"/>
         <image name="Yellow Circle" width="195" height="194"/>
