@@ -33,7 +33,10 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
         print(friendName)
     }
     
-
+    @IBAction func clickedAddButton(_ sender: Any) {
+        addNewItem()
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayOfProducts.count
     }
@@ -52,6 +55,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
     func addNewItem() {
         let alert = UIAlertController(title: "New Item", message: "enter your item name below", preferredStyle: .alert)
         alert.addTextField { (TextField) in
+            TextField.placeholder = "price"
         }
         alert.addTextField { (TextField2) in
         }
@@ -63,9 +67,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
             self.resultTableView.reloadData()
         }
         alert.addAction(OK)
-    }
-    @IBAction func pressedAddButton(_ sender: UIBarButtonItem) {
-        addNewItem()
+        present(alert, animated: true, completion: nil)
     }
     
 }
