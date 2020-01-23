@@ -562,6 +562,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.84401099243862121" blue="0.21837972942821471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uHH-2y-rXf">
+                                <rect key="frame" x="199" y="50" width="825" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92857290714252316" green="1" blue="0.05334678734905407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Moneynati" translatesAutoresizingMaskIntoConstraints="NO" id="Rha-Sv-77y">
                                 <rect key="frame" x="436" y="1089" width="506" height="277"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -591,7 +596,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How much money are you willing to spend?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qVE-U9-piA">
-                                <rect key="frame" x="124" y="151" width="780" height="262"/>
+                                <rect key="frame" x="199" y="151" width="705" height="262"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
@@ -653,6 +658,10 @@
                                     <segue destination="C3y-tC-uft" kind="show" id="bl0-i6-Mjm"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Businessman" translatesAutoresizingMaskIntoConstraints="NO" id="7dz-rT-Pg5">
+                                <rect key="frame" x="0.0" y="85" width="235" height="401"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="X0n-Ml-osQ"/>
@@ -673,6 +682,7 @@
     </scenes>
     <resources>
         <image name="Bright" width="217" height="217"/>
+        <image name="Businessman" width="427" height="998"/>
         <image name="Dollar Sign" width="234" height="388"/>
         <image name="Eagle Gold" width="565" height="563"/>
         <image name="Gray Circle" width="256" height="254"/>
