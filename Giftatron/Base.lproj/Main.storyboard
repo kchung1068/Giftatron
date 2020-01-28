@@ -445,14 +445,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UlA-Vt-lv9">
-                                <rect key="frame" x="0.0" y="1180" width="302" height="186"/>
+                                <rect key="frame" x="0.0" y="1040" width="302" height="326"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z7P-1N-b9V">
-                                <rect key="frame" x="396" y="725" width="368" height="179"/>
+                                <rect key="frame" x="239" y="725" width="525" height="272"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36326101036269431" green="0.36326101036269431" blue="0.36326101036269431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Tc-yg-Onh">
+                                <rect key="frame" x="0.0" y="54" width="701" height="447"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.10032947690000001" green="0.96760101639999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I9F-CV-x6p">
                                 <rect key="frame" x="422" y="986" width="520" height="282"/>
@@ -536,11 +541,10 @@
                                     <segue destination="5rM-GQ-8mK" kind="show" id="5Lz-UD-xQ1"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HeQ-H3-xQb">
-                                <rect key="frame" x="0.0" y="134" width="576" height="324"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tele" translatesAutoresizingMaskIntoConstraints="NO" id="00I-BV-hSe">
+                                <rect key="frame" x="0.0" y="725" width="282" height="204"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.10032947694262317" green="0.96760101636627582" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="s6A-zK-Ki4"/>
@@ -721,6 +725,7 @@
         <image name="SS" width="532" height="338"/>
         <image name="Salevector" width="920" height="907"/>
         <image name="Santahat" width="230" height="158"/>
+        <image name="Tele" width="950" height="1080"/>
         <image name="arrowshape.turn.up.right" catalog="system" width="64" height="52"/>
         <image name="arrowshape.turn.up.right.fill" catalog="system" width="64" height="52"/>
         <image name="celebration" width="512" height="512"/>
