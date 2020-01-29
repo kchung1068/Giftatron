@@ -22,21 +22,32 @@ class FourthQuestionViewController: UIViewController {
     @IBOutlet weak var musicOutlet: UIButton!
     @IBOutlet weak var gamingOutlet: UIButton!
     @IBOutlet weak var englishOutlet: UIButton!
-    
+    @IBOutlet weak var blackViewOne: UIView!
+    @IBOutlet weak var blackViewTwo: UIView!
+    @IBOutlet weak var blackViewThree: UIView!
+    @IBOutlet weak var blackViewFour: UIView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         segue.alpha = 0
-        beautyOutlet.frame.size = CGSize(width: 267, height: 137)
+        blackViewOne.alpha = 0
+        blackViewTwo.alpha = 0
+        blackViewThree.alpha = 0
+        blackViewFour.alpha = 0
+        beautyOutlet.frame.size = CGSize(width: 307, height: 137)
         electronicOutlet.frame.size = CGSize(width: 307, height: 137)
-        musicOutlet.frame.size = CGSize(width: 267, height: 137)
-        gamingOutlet.frame.size = CGSize(width: 267, height: 137)
-        englishOutlet.frame.size = CGSize(width: 267, height: 137)
+        musicOutlet.frame.size = CGSize(width: 307, height: 137)
+        gamingOutlet.frame.size = CGSize(width: 307, height: 137)
+        englishOutlet.frame.size = CGSize(width: 307, height: 137)
     }
     
     @IBAction func beauty(_ sender: Any) {
         segue.alpha = 1
+        blackViewOne.alpha = 1
+        blackViewTwo.alpha = 1
+        blackViewThree.alpha = 1
+        blackViewFour.alpha = 1
         answer4 = "Beauty"
         beautyOutlet.setBackgroundImage(UIImage(named: "Cyan Circle"), for: .normal)
         beautyOutlet.setTitleColor(.orange, for: .normal)
@@ -54,6 +65,10 @@ class FourthQuestionViewController: UIViewController {
     
     @IBAction func electronic(_ sender: Any) {
         segue.alpha = 1
+        blackViewOne.alpha = 1
+        blackViewTwo.alpha = 1
+               blackViewThree.alpha = 1
+               blackViewFour.alpha = 1
         answer4 = "Electronics"
         beautyOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
         beautyOutlet.setTitleColor(.black, for: .normal)
@@ -70,6 +85,10 @@ class FourthQuestionViewController: UIViewController {
     
     @IBAction func music(_ sender: Any) {
         segue.alpha = 1
+        blackViewOne.alpha = 1
+        blackViewTwo.alpha = 1
+               blackViewThree.alpha = 1
+               blackViewFour.alpha = 1
         answer4 = "Music"
         beautyOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
                beautyOutlet.setTitleColor(.black, for: .normal)
@@ -85,6 +104,10 @@ class FourthQuestionViewController: UIViewController {
     }
     @IBAction func gaming(_ sender: Any) {
         segue.alpha = 1
+        blackViewOne.alpha = 1
+        blackViewTwo.alpha = 1
+               blackViewThree.alpha = 1
+               blackViewFour.alpha = 1
         answer4 = "Gaming"
         beautyOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
                       beautyOutlet.setTitleColor(.black, for: .normal)
@@ -100,7 +123,11 @@ class FourthQuestionViewController: UIViewController {
     
     @IBAction func english(_ sender: Any) {
         answer4 = "English"
+        blackViewOne.alpha = 1
         segue.alpha = 1
+        blackViewTwo.alpha = 1
+               blackViewThree.alpha = 1
+               blackViewFour.alpha = 1
         beautyOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
                             beautyOutlet.setTitleColor(.black, for: .normal)
                      electronicOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
