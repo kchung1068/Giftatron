@@ -62,16 +62,6 @@ class ViewController: UIViewController {
     }
     
     
-//    public func getProducts(url: String) {
-//           let url = URL(string: url)!
-//                   URLSession.shared.dataTask(with: url) { (data, response, error) in
-//                       if let data = data {
-////                           let jsonObject = try? JSONSerialization.jsonObject(with:data,options:JSONSerialization.ReadingOptions.allowFragments)
-//
-//                       }
-//           }
-//
-//    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let nvc = segue.destination as! firstQuestionViewController
         hollyHello()
