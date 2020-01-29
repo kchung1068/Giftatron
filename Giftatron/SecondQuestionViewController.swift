@@ -90,9 +90,9 @@ class SecondQuestionViewController: UIViewController {
         nvc.friendName = friendName
         nvc.answer1 = answer1
         nvc.answer2 = answer2
-        print(friendName)
-        print(answer1)
-        print(answer2)
+//        print(friendName)
+//        print(answer1)
+//        print(answer2)
         nvc.arrayOfAnswers = arrayOfAnswers
         
     }

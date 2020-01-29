@@ -95,10 +95,10 @@ class ThirdQuestionViewController: UIViewController {
     nvc.answer1 = answer1
     nvc.answer2 = answer2
         nvc.answer3 = answer3
-        print(friendName)
-               print(answer1)
-               print(answer2)
-        print(answer3)
+//        print(friendName)
+//               print(answer1)
+//               print(answer2)
+//        print(answer3)
         
         
         nvc.arrayOfAnswers = arrayOfAnswers
