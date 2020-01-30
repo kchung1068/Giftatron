@@ -36,8 +36,8 @@ class FourthQuestionViewController: UIViewController {
         blackViewThree.alpha = 0
         blackViewFour.alpha = 0
         beautyOutlet.frame.size = CGSize(width: 307, height: 137)
-        electronicOutlet.frame.size = CGSize(width: 307, height: 137)
-        musicOutlet.frame.size = CGSize(width: 307, height: 137)
+        electronicOutlet.frame.size = CGSize(width: 400, height: 137)
+        musicOutlet.frame.size = CGSize(width: 292, height: 137)
         gamingOutlet.frame.size = CGSize(width: 307, height: 137)
         englishOutlet.frame.size = CGSize(width: 307, height: 137)
     }
