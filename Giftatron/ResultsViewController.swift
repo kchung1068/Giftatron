@@ -94,7 +94,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
                 do {
                     guard let product = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) else { return }
                     let dictionary = product as! NSDictionary
-                    let myProducts = dictionary["product"] as NSArray
+                    let myProducts = dictionary["product"] as! NSArray
                     print(dictionary["products"])
 //                    guard let newProduct : NSData = try? NSKeyedArchiver.archivedData(withRootObject: product, requiringSecureCoding: true) as NSData? else { return }
 //                    print(newProduct)
