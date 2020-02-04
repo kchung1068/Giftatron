@@ -54,8 +54,8 @@ class ViewController: UIViewController {
         //            let url = URL(string: "http://www.amazon.com/s?k=\(giftSearch)")!
         //            let vc = SFSafariViewController(url: url)
         //            present(vc, animated: true, completion: nil)
-                    print(friendName)
-                    print(gift)
+//                    print(friendName)
+//                    print(gift)
 
         
         }

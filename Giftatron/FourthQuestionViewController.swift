@@ -153,12 +153,12 @@ class FourthQuestionViewController: UIViewController {
         arrayOfAnswers.append(answer2)
         arrayOfAnswers.append(answer3)
         arrayOfAnswers.append(answer4)
-         print(friendName)
-                      print(answer1)
-                      print(answer2)
-               print(answer3)
-        print(answer4)
-        print(arrayOfAnswers)
+//         print(friendName)
+//                      print(answer1)
+//                      print(answer2)
+//               print(answer3)
+//        print(answer4)
+//        print(arrayOfAnswers)
         nvc.arrayOfAnswers = arrayOfAnswers
     }
     

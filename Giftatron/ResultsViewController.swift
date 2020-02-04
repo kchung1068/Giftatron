@@ -8,21 +8,21 @@
 
 import UIKit
 
-struct Main : Codable {
+struct Main : Decodable {
     let products : [Gift]
 }
-struct Gift : Codable {
+struct Gift : Decodable {
     let name : String
     let salePrice : Double
     let mobileUrl : URL
     let image : URL
-    let longDescription : String
+    let longDescription : String?
 }
 
 
 
 class ResultsViewController: UIViewController, UITableViewDataSource,UITableViewDelegate {
-    var arrayOfProducts = Main(products: [])
+    var arrayOfProducts : [Gift] = []
     var friendName = ""
     var answer1 = ""
     var answer2 = ""
@@ -44,7 +44,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
     }
     override func viewDidAppear(_ animated: Bool) {
         navigationController?.navigationBar.topItem?.title = "Showing Results for " + friendName
-        print(friendName)
+//        print(friendName)
     }
     
     @IBAction func clickedAddButton(_ sender: Any) {
@@ -52,15 +52,15 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrayOfProducts.products.count
+        return arrayOfProducts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if let cell = resultTableView.dequeueReusableCell(withIdentifier: "cell") {
-            cell.textLabel?.text = arrayOfProducts.products[indexPath.row].name
-            cell.imageView?.image = UIImage(ciImage: CIImage(contentsOf: arrayOfProducts.products[indexPath.row].image)!)
-            cell.detailTextLabel?.text = "$" + String(arrayOfProducts.products[indexPath.row].salePrice)
+            cell.textLabel?.text = arrayOfProducts[indexPath.row].name
+            cell.imageView?.image = UIImage(ciImage: CIImage(contentsOf: arrayOfProducts[indexPath.row].image)!)
+            cell.detailTextLabel?.text = "$" + String(arrayOfProducts[indexPath.row].salePrice)
         return cell
         } else {
             return UITableViewCell()
@@ -88,15 +88,37 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
         
         let url = URL(string: "https://api.bestbuy.com/v1/products(search=ram)?format=json&pageSize=5&apiKey=GVfY17LDc7x2vt4lBya2D26z")
         URLSession.shared.dataTask(with: url!) { (data, response, error) in
+//            print(data)
             if let data = data {
+//                print(data as! NSData)
                 do {
-                    self.arrayOfProducts = try JSONDecoder().decode(Main.self, from: data)
-                    for x in self.arrayOfProducts.products {
-                        print(self.arrayOfProducts.products.count)
-//                        let other = x.dt_txt + " " + x.weather.first!.description
-//                        self.temperatureData.append(String(x.main.temp) + " " + other)
-//                        print(self.temperatureData)
+                    guard let product = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) else { return }
+                    let dictionary = product as! NSDictionary
+                    let myProducts = dictionary["products"] as! NSArray
+                    print(dictionary["products"])
+                    for x in myProducts {
+                        let x = x as! NSDictionary
+                        let name = x["name"] as! String
+                        let longdes = x["longDescription"] as? String
+                        let salePrice = x["salePrice"] as! Double
+                        let image = x["image"] as! String
+                        let url = x["mobileUrl"] as! String
+                        self.arrayOfProducts.append(Gift(name: name, salePrice: salePrice, mobileUrl: URL(string: url)!, image: URL(string: image)!, longDescription: longdes))
+                        print(name + " " + String(salePrice))
                     }
+//                    guard let newProduct : NSData = try? NSKeyedArchiver.archivedData(withRootObject: product, requiringSecureCoding: true) as NSData? else { return }
+//                    print(newProduct)
+//                    let jsonData: NSData = try JSONSerialization.data(withJSONObject: product, options: JSONSerialization.WritingOptions.prettyPrinted) as NSData
+//                    print(jsonData)
+//                    let products = try JSONDecoder().deacode(Main.self, from: jsonData as Data)
+//                    print(products)
+//                    for x in products.products {
+//                        print(products.products.count)
+//                        self.arrayOfProducts.append(x)
+////                        let other = x.dt_txt + " " + x.weather.first!.description
+////                        self.temperatureData.append(String(x.main.temp) + " " + other)
+////                        print(self.temperatureData)
+//                    }
                     DispatchQueue.main.async {
                         self.resultTableView.reloadData()
                     }
@@ -104,7 +126,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
                     print("Error: \(err)")
                 }
             } else {
-                print("yuh oh")
+//                print("yuh oh")
             }
         }.resume()
     }
