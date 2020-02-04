@@ -16,7 +16,7 @@ struct Gift : Decodable {
     let salePrice : Double
     let mobileUrl : URL
     let image : URL
-    let longDescription : String
+    let longDescription : String?
 }
 
 
@@ -94,13 +94,23 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
                 do {
                     guard let product = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) else { return }
                     let dictionary = product as! NSDictionary
-                    let myProducts = dictionary["product"] as! NSArray
+                    let myProducts = dictionary["products"] as! NSArray
                     print(dictionary["products"])
+                    for x in myProducts {
+                        let x = x as! NSDictionary
+                        let name = x["name"] as! String
+                        let longdes = x["longDescription"] as? String
+                        let salePrice = x["salePrice"] as! Double
+                        let image = x["image"] as! String
+                        let url = x["mobileUrl"] as! String
+                        self.arrayOfProducts.append(Gift(name: name, salePrice: salePrice, mobileUrl: URL(string: url)!, image: URL(string: image)!, longDescription: longdes))
+                        print(name + " " + String(salePrice))
+                    }
 //                    guard let newProduct : NSData = try? NSKeyedArchiver.archivedData(withRootObject: product, requiringSecureCoding: true) as NSData? else { return }
 //                    print(newProduct)
 //                    let jsonData: NSData = try JSONSerialization.data(withJSONObject: product, options: JSONSerialization.WritingOptions.prettyPrinted) as NSData
 //                    print(jsonData)
-//                    let products = try JSONDecoder().decode(Main.self, from: jsonData as Data)
+//                    let products = try JSONDecoder().deacode(Main.self, from: jsonData as Data)
 //                    print(products)
 //                    for x in products.products {
 //                        print(products.products.count)
@@ -109,9 +119,9 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
 ////                        self.temperatureData.append(String(x.main.temp) + " " + other)
 ////                        print(self.temperatureData)
 //                    }
-//                    DispatchQueue.main.async {
-//                        self.resultTableView.reloadData()
-//                    }
+                    DispatchQueue.main.async {
+                        self.resultTableView.reloadData()
+                    }
                 } catch let err {
                     print("Error: \(err)")
                 }
