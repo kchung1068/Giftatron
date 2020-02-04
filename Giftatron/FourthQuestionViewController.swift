@@ -14,6 +14,7 @@ class FourthQuestionViewController: UIViewController {
        var answer2 = ""
     var answer3 = ""
     var answer4 = ""
+    var smoob = ""
     var arrayOfAnswers: [String] = []
     @IBOutlet weak var segue: UIButton!
     
@@ -148,6 +149,7 @@ class FourthQuestionViewController: UIViewController {
         nvc.answer3 = answer3
         nvc.answer4 = answer4
         nvc.friendName = friendName
+        nvc.smoob = smoob
         
         arrayOfAnswers.append(answer1)
         arrayOfAnswers.append(answer2)

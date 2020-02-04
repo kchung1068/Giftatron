@@ -12,6 +12,7 @@ class SecondQuestionViewController: UIViewController {
     var friendName = ""
     var answer1 = ""
     var answer2 = ""
+    var smoob = ""
     var arrayOfAnswers: [String] = []
 
     @IBOutlet weak var segue: UIButton!
@@ -89,6 +90,7 @@ class SecondQuestionViewController: UIViewController {
         let nvc = segue.destination as! ThirdQuestionViewController
         nvc.friendName = friendName
         nvc.answer1 = answer1
+        nvc.smoob = smoob
         nvc.answer2 = answer2
 //        print(friendName)
 //        print(answer1)
