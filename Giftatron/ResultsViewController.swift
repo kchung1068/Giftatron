@@ -15,7 +15,7 @@ struct Gift : Decodable {
     let name : String
     let salePrice : Double
     let mobileUrl : URL
-    let image : URL
+    let image : URL?
     let longDescription : String?
 }
 
@@ -28,6 +28,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
     var answer2 = ""
     var answer3 = ""
     var answer4 = ""
+    var smoob = ""
     var arrayOfAnswers: [String] = []
 
     
@@ -59,7 +60,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
         
         if let cell = resultTableView.dequeueReusableCell(withIdentifier: "cell") {
             cell.textLabel?.text = arrayOfProducts[indexPath.row].name
-            cell.imageView?.image = UIImage(ciImage: CIImage(contentsOf: arrayOfProducts[indexPath.row].image)!)
+            cell.imageView?.image = UIImage(ciImage: CIImage(contentsOf: arrayOfProducts[indexPath.row].image!)!)
             cell.detailTextLabel?.text = "$" + String(arrayOfProducts[indexPath.row].salePrice)
         return cell
         } else {
@@ -85,8 +86,11 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
     }
     
     func gimmeeBestBuy() {
-        
-        let url = URL(string: "https://api.bestbuy.com/v1/products(search=ram)?format=json&pageSize=5&apiKey=GVfY17LDc7x2vt4lBya2D26z")
+        var url = URL(string: "https://api.bestbuy.com/v1/products(search=ram)?format=json&pageSize=5&apiKey=GVfY17LDc7x2vt4lBya2D26z")
+        if smoob != "" {
+            url = URL(string: "https://api.bestbuy.com/v1/products(search=\(smoob))?format=json&pageSize=5&apiKey=GVfY17LDc7x2vt4lBya2D26z")
+            print(url?.absoluteString)
+        }
         URLSession.shared.dataTask(with: url!) { (data, response, error) in
 //            print(data)
             if let data = data {
@@ -101,9 +105,9 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
                         let name = x["name"] as! String
                         let longdes = x["longDescription"] as? String
                         let salePrice = x["salePrice"] as! Double
-                        let image = x["image"] as! String
+                        let image = x["image"] as? String
                         let url = x["mobileUrl"] as! String
-                        self.arrayOfProducts.append(Gift(name: name, salePrice: salePrice, mobileUrl: URL(string: url)!, image: URL(string: image)!, longDescription: longdes))
+                        self.arrayOfProducts.append(Gift(name: name, salePrice: salePrice, mobileUrl: URL(string: url)!, image: URL(string: image!)!, longDescription: longdes))
                         print(name + " " + String(salePrice))
                     }
 //                    guard let newProduct : NSData = try? NSKeyedArchiver.archivedData(withRootObject: product, requiringSecureCoding: true) as NSData? else { return }

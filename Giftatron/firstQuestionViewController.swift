@@ -11,6 +11,7 @@ import UIKit
 class firstQuestionViewController: UIViewController {
     var friendName = ""
     var answer1 = ""
+    var smoob = ""
      var arrayOfAnswers: [String] = []
     @IBOutlet weak var maleOutlet: UIButton!
     
@@ -76,6 +77,7 @@ class firstQuestionViewController: UIViewController {
         nvc.friendName = friendName
         nvc.answer1 = answer1
         nvc.arrayOfAnswers = arrayOfAnswers
+        nvc.smoob = smoob
         
      
 //        print(answer1)

@@ -69,7 +69,7 @@ class ViewController: UIViewController {
         let nvc = segue.destination as! firstQuestionViewController
         hollyHello()
         
-        
+        nvc.smoob = gift
         nvc.friendName = friendName
         
     }
