@@ -30,7 +30,7 @@
                                                 <color key="backgroundColor" red="0.31283284432553027" green="1" blue="0.17531925519371794" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hat" translatesAutoresizingMaskIntoConstraints="NO" id="9qd-uZ-xvb">
-                                                <rect key="frame" x="669.5" y="0.0" width="334.5" height="100"/>
+                                                <rect key="frame" x="669.5" y="0.0" width="334.5" height="100.00000000000011"/>
                                                 <color key="backgroundColor" red="0.49530636756098079" green="0.67958184008270572" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
                                         </subviews>
@@ -56,28 +56,28 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SS" translatesAutoresizingMaskIntoConstraints="NO" id="bgH-sm-5Uc">
-                                        <rect key="frame" x="0.0" y="270" width="1004" height="842.5"/>
+                                        <rect key="frame" x="0.0" y="270" width="1004" height="746"/>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of friend" textAlignment="natural" minimumFontSize="17" id="ucz-5J-Vs6">
-                                        <rect key="frame" x="0.0" y="1122.5" width="1004" height="56"/>
+                                        <rect key="frame" x="0.0" y="1026" width="1004" height="56"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Already know what you want, enter that here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6ra-wv-6X9">
-                                        <rect key="frame" x="0.0" y="1188.5" width="1004" height="56"/>
+                                        <rect key="frame" x="0.0" y="1092" width="1004" height="56"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5zF-gl-6nE">
-                                        <rect key="frame" x="0.0" y="1254.5" width="1004" height="61.5"/>
+                                        <rect key="frame" x="0.0" y="1158" width="1004" height="158"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Santahat" translatesAutoresizingMaskIntoConstraints="NO" id="pGl-Ko-fzq">
-                                                <rect key="frame" x="0.0" y="0.0" width="502" height="61.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="502" height="158"/>
                                                 <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FpZ-de-uDO">
-                                                <rect key="frame" x="502" y="1" width="502" height="59"/>
+                                                <rect key="frame" x="502" y="1" width="502" height="155.5"/>
                                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="49"/>
                                                 <state key="normal" title="To Quiz" backgroundImage="arrowshape.turn.up.right" catalog="system">
@@ -357,8 +357,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gda-9g-Pzj">
-                                <rect key="frame" x="620" y="443" width="404" height="260"/>
+                                <rect key="frame" x="525" y="420" width="499" height="283"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Peace" translatesAutoresizingMaskIntoConstraints="NO" id="qSA-iq-x9u">
+                                        <rect key="frame" x="18" y="0.0" width="378" height="238"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W36-mb-rst">
@@ -378,22 +384,34 @@
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TyW-0B-h4c">
-                                <rect key="frame" x="0.0" y="362" width="358" height="194"/>
+                                <rect key="frame" x="0.0" y="287" width="347" height="359"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Raise" translatesAutoresizingMaskIntoConstraints="NO" id="yIF-dy-ily">
+                                        <rect key="frame" x="-70" y="0.0" width="383" height="247"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iqV-S3-CbR">
-                                <rect key="frame" x="57" y="719" width="430" height="247"/>
+                                <rect key="frame" x="0.0" y="719" width="504" height="361"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Jigsaw" translatesAutoresizingMaskIntoConstraints="NO" id="hBa-ho-haH">
+                                        <rect key="frame" x="-72" y="8" width="354" height="209"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lt7-d8-tTg">
-                                <rect key="frame" x="592" y="811" width="240" height="128"/>
+                                <rect key="frame" x="506" y="711" width="326" height="259"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fHj-vl-OGK">
-                                <rect key="frame" x="408" y="1130" width="348" height="128"/>
+                                <rect key="frame" x="408" y="1130" width="348" height="158"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -412,6 +430,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="ZLG-Jj-93z">
+                                <rect key="frame" x="347" y="420" width="178" height="462"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Thonk" translatesAutoresizingMaskIntoConstraints="NO" id="Jlf-xB-IdC">
+                                <rect key="frame" x="704" y="695" width="375" height="312"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HO9-xM-9lD">
                                 <rect key="frame" x="506" y="1102" width="508" height="264"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -424,7 +450,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What's your friend's age range?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EU4-Id-CSK">
-                                <rect key="frame" x="275" y="142" width="507" height="293"/>
+                                <rect key="frame" x="275" y="142" width="507" height="283"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
@@ -475,8 +501,8 @@
                                     <action selector="eighteenFifty:" destination="c0H-xh-6js" eventType="touchUpInside" id="BAr-r8-bS6"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="ZLG-Jj-93z">
-                                <rect key="frame" x="347" y="420" width="212" height="462"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Swing" translatesAutoresizingMaskIntoConstraints="NO" id="1vS-cA-JD5">
+                                <rect key="frame" x="215" y="420" width="442" height="171"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -848,12 +874,15 @@
         <image name="Gray Circle" width="256" height="254"/>
         <image name="Guitar" width="1200" height="873"/>
         <image name="Hat" width="248" height="392"/>
+        <image name="Jigsaw" width="221" height="223"/>
         <image name="Line" width="402" height="205"/>
         <image name="Mario" width="630" height="630"/>
         <image name="Moneybags" width="877" height="535"/>
         <image name="Moneynati" width="275" height="183"/>
         <image name="Next" width="512" height="404"/>
+        <image name="Peace" width="508" height="512"/>
         <image name="Pot Gold" width="408" height="450"/>
+        <image name="Raise" width="490" height="490"/>
         <image name="Relax" width="824" height="549"/>
         <image name="Right" width="119" height="119"/>
         <image name="Rise" width="583" height="387"/>
@@ -861,8 +890,10 @@
         <image name="Salevector" width="920" height="907"/>
         <image name="Santahat" width="230" height="158"/>
         <image name="Spice" width="1276" height="2855"/>
+        <image name="Swing" width="1296" height="1297"/>
         <image name="TV" width="626" height="626"/>
         <image name="Tele" width="950" height="999"/>
+        <image name="Thonk" width="860" height="1002"/>
         <image name="arrowshape.turn.up.right" catalog="system" width="64" height="52"/>
         <image name="arrowshape.turn.up.right.fill" catalog="system" width="64" height="52"/>
         <image name="celebration" width="512" height="512"/>
