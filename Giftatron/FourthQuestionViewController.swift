@@ -36,8 +36,8 @@ class FourthQuestionViewController: UIViewController {
         blackViewThree.alpha = 0
         blackViewFour.alpha = 0
         beautyOutlet.frame.size = CGSize(width: 307, height: 137)
-        electronicOutlet.frame.size = CGSize(width: 307, height: 137)
-        musicOutlet.frame.size = CGSize(width: 307, height: 137)
+        electronicOutlet.frame.size = CGSize(width: 400, height: 137)
+        musicOutlet.frame.size = CGSize(width: 292, height: 137)
         gamingOutlet.frame.size = CGSize(width: 307, height: 137)
         englishOutlet.frame.size = CGSize(width: 307, height: 137)
     }
@@ -153,12 +153,12 @@ class FourthQuestionViewController: UIViewController {
         arrayOfAnswers.append(answer2)
         arrayOfAnswers.append(answer3)
         arrayOfAnswers.append(answer4)
-         print(friendName)
-                      print(answer1)
-                      print(answer2)
-               print(answer3)
-        print(answer4)
-        print(arrayOfAnswers)
+//         print(friendName)
+//                      print(answer1)
+//                      print(answer2)
+//               print(answer3)
+//        print(answer4)
+//        print(arrayOfAnswers)
         nvc.arrayOfAnswers = arrayOfAnswers
     }
     
