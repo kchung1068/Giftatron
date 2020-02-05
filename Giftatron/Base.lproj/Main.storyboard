@@ -184,6 +184,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5oU-lT-TCG">
+                                <rect key="frame" x="0.0" y="50" width="1024" height="1316"/>
+                            </stackView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gzC-Hd-BGx">
                                 <rect key="frame" x="0.0" y="29" width="1024" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -316,6 +319,11 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5oU-lT-TCG" firstAttribute="leading" secondItem="Q9k-4f-erV" secondAttribute="leading" id="W4e-sh-tPy"/>
+                            <constraint firstItem="5oU-lT-TCG" firstAttribute="trailing" secondItem="Q9k-4f-erV" secondAttribute="trailing" id="tVC-A6-ee2"/>
+                            <constraint firstItem="5oU-lT-TCG" firstAttribute="top" secondItem="Q9k-4f-erV" secondAttribute="top" id="vgS-yX-R84"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Q9k-4f-erV"/>
                     </view>
                     <navigationItem key="navigationItem" id="5aH-aU-Lg8"/>
