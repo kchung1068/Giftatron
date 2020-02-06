@@ -184,15 +184,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5oU-lT-TCG">
-                                <rect key="frame" x="0.0" y="50" width="1024" height="1316"/>
-                            </stackView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gzC-Hd-BGx">
-                                <rect key="frame" x="0.0" y="29" width="1024" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4g3-oW-TKH">
+                                <rect key="frame" x="392" y="619" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="t0v-wv-pKy">
+                                <rect key="frame" x="0.0" y="50" width="1024" height="96"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzC-Hd-BGx">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="96"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="341" translatesAutoresizingMaskIntoConstraints="NO" id="uQs-oo-JN1">
+                                <rect key="frame" x="0.0" y="149" width="1024" height="561"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rpe-uo-ebd">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="110"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9M2-vV-zwn">
+                                        <rect key="frame" x="0.0" y="451" width="1024" height="110"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pke-Mg-3fw">
                                 <rect key="frame" x="0.0" y="1126" width="444" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -320,9 +336,13 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="5oU-lT-TCG" firstAttribute="leading" secondItem="Q9k-4f-erV" secondAttribute="leading" id="W4e-sh-tPy"/>
-                            <constraint firstItem="5oU-lT-TCG" firstAttribute="trailing" secondItem="Q9k-4f-erV" secondAttribute="trailing" id="tVC-A6-ee2"/>
-                            <constraint firstItem="5oU-lT-TCG" firstAttribute="top" secondItem="Q9k-4f-erV" secondAttribute="top" id="vgS-yX-R84"/>
+                            <constraint firstAttribute="bottom" secondItem="t0v-wv-pKy" secondAttribute="bottom" constant="1220" id="1cE-og-uJh"/>
+                            <constraint firstItem="t0v-wv-pKy" firstAttribute="trailing" secondItem="Q9k-4f-erV" secondAttribute="trailing" id="5NO-Nr-5bj"/>
+                            <constraint firstItem="Q9k-4f-erV" firstAttribute="trailing" secondItem="uQs-oo-JN1" secondAttribute="trailing" id="BCL-CL-khd"/>
+                            <constraint firstItem="uQs-oo-JN1" firstAttribute="top" secondItem="t0v-wv-pKy" secondAttribute="bottom" constant="8" symbolic="YES" id="Lec-eM-2fC"/>
+                            <constraint firstItem="t0v-wv-pKy" firstAttribute="top" secondItem="Q9k-4f-erV" secondAttribute="top" id="Ofj-qZ-ZhZ"/>
+                            <constraint firstItem="uQs-oo-JN1" firstAttribute="leading" secondItem="Q9k-4f-erV" secondAttribute="leading" id="koY-76-3g3"/>
+                            <constraint firstItem="t0v-wv-pKy" firstAttribute="leading" secondItem="Q9k-4f-erV" secondAttribute="leading" id="oNs-SX-PAg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Q9k-4f-erV"/>
                     </view>
@@ -700,7 +720,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mario" translatesAutoresizingMaskIntoConstraints="NO" id="0Xz-Zz-7C9">
-                                <rect key="frame" x="573" y="424" width="512" height="169"/>
+                                <rect key="frame" x="594" y="424" width="512" height="169"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
