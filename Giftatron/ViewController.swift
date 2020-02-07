@@ -17,21 +17,25 @@ import SafariServices
 class ViewController: UIViewController {
     
     @IBOutlet weak var gifttronLabel: UILabel!
+    
     let arrayOfProducts: [Product] = []
+    
     @IBOutlet weak var textField: UITextField!
     
     @IBOutlet weak var giftTextField: UITextField!
+    
     var friendName = ""
     var gift = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         gifttronLabel.textColor = .green
-      
     }
+    
     @IBAction func totheQuiz(_ sender: Any) {
         hollyHello()
         }
+    
     func hollyHello() {
                 if let friendName = textField.text, let gift = giftTextField.text {
                     self.friendName = friendName
@@ -51,11 +55,10 @@ class ViewController: UIViewController {
                         giftSearch += x
                     }
                     self.gift = gift
-        //            let url = URL(string: "http://www.amazon.com/s?k=\(giftSearch)")!
-        //            let vc = SFSafariViewController(url: url)
-        //            present(vc, animated: true, completion: nil)
-//                    print(friendName)
-//                    print(gift)
+        //            let url = URL(string: "http://www.amazon.com/s?k=\(giftSearch)")        //            let vc = SFSafariViewController(url: url)
+//            present(vc, animated: true, completion: nil)
+//           print(friendName)
+//            print(gift)
 
         
         }
