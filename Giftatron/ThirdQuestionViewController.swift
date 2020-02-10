@@ -38,7 +38,7 @@ class ThirdQuestionViewController: UIViewController {
     
     @IBAction func zeroTen(_ sender: Any) {
         segue.alpha = 1
-        answer3 = "$0-10"
+        answer3 = "0-10"
         zeroTenOutlet.setTitleColor(.green, for: .normal)
         zeroTenOutlet.setBackgroundImage(UIImage(named: "Orange Circle"), for: .normal)
         tenFiftyOutlet.setTitleColor(.black, for: .normal)
@@ -52,7 +52,7 @@ class ThirdQuestionViewController: UIViewController {
     
     @IBAction func tenFifty(_ sender: Any) {
         segue.alpha = 1
-        answer3 = "$10-50"
+        answer3 = "10-50"
         zeroTenOutlet.setTitleColor(.black, for: .normal)
         zeroTenOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
         tenFiftyOutlet.setTitleColor(.green, for: .normal)
@@ -65,7 +65,7 @@ class ThirdQuestionViewController: UIViewController {
     
     @IBAction func fiftyHundred(_ sender: Any) {
         segue.alpha = 1
-        answer3 = "$50-100"
+        answer3 = "50-100"
         zeroTenOutlet.setTitleColor(.black, for: .normal)
                zeroTenOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
                tenFiftyOutlet.setTitleColor(.black, for: .normal)
@@ -84,7 +84,7 @@ class ThirdQuestionViewController: UIViewController {
             tenFiftyOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
                fiftyHundredOutlet.setTitleColor(.black, for: .normal)
                fiftyHundredOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
-        answer3 = "$100+"
+        answer3 = "100-nada"
         hundredPlusOutlet.setTitleColor(.green, for: .normal)
         hundredPlusOutlet.setBackgroundImage(UIImage(named: "Orange Circle"), for: .normal)
         

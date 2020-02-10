@@ -15,7 +15,7 @@ struct Gift : Decodable {
     let name : String
     let salePrice : Double
     let mobileUrl : URL
-    let image : URL?
+    let image : String?
     let longDescription : String?
 }
 
@@ -30,7 +30,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
     var answer4 = ""
     var smoob = ""
     var arrayOfAnswers: [String] = []
-
+    
     
     @IBOutlet weak var resultTableView: UITableView!
     
@@ -39,13 +39,13 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
         resultTableView.delegate = self
         resultTableView.dataSource = self
         gimmeeBestBuy()
-//        arrayOfProducts.append(Product(image: UIImage(named: "Santahat")!, price: 20.0, name: "Cool Hat", url: "www.google.com"))
-//        arrayOfProducts.append(Product(image: UIImage(named: "Pink Circle")!, price: 50.0, name: "Circle Kitchen Top", url: "www.yahoo.com"))
-//        arrayOfProducts.append(Product(image: UIImage(named: "celebration")!, price: 100.0, name: "Party Materials", url: "www.Bing.com"))
+        //        arrayOfProducts.append(Product(image: UIImage(named: "Santahat")!, price: 20.0, name: "Cool Hat", url: "www.google.com"))
+        //        arrayOfProducts.append(Product(image: UIImage(named: "Pink Circle")!, price: 50.0, name: "Circle Kitchen Top", url: "www.yahoo.com"))
+        //        arrayOfProducts.append(Product(image: UIImage(named: "celebration")!, price: 100.0, name: "Party Materials", url: "www.Bing.com"))
     }
     override func viewDidAppear(_ animated: Bool) {
         navigationController?.navigationBar.topItem?.title = "Showing Results for " + friendName
-//        print(friendName)
+        //        print(friendName)
     }
     
     @IBAction func clickedAddButton(_ sender: Any) {
@@ -60,9 +60,13 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
         
         if let cell = resultTableView.dequeueReusableCell(withIdentifier: "cell") {
             cell.textLabel?.text = arrayOfProducts[indexPath.row].name
-            cell.imageView?.image = UIImage(ciImage: CIImage(contentsOf: arrayOfProducts[indexPath.row].image!)!)
+            var url = URL(string: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png")
+            if let image = arrayOfProducts[indexPath.row].image {
+                url = URL(string: image)
+            }
+            cell.imageView?.image = UIImage(ciImage: CIImage(contentsOf: url!)!)
             cell.detailTextLabel?.text = "$" + String(arrayOfProducts[indexPath.row].salePrice)
-        return cell
+            return cell
         } else {
             return UITableViewCell()
         }
@@ -78,7 +82,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
         }
         let OK = UIAlertAction(title: "Go", style: .destructive) { (OK) in
             let item = Product(image: UIImage(), price: Double(alert.textFields![0].text!)!, name: alert.textFields![1].text!, url: alert.textFields![2].text!)
-//            self.arrayOfProducts.append(item)
+            //            self.arrayOfProducts.append(item)
             self.resultTableView.reloadData()
         }
         alert.addAction(OK)
@@ -86,15 +90,46 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
     }
     
     func gimmeeBestBuy() {
-        var url = URL(string: "https://api.bestbuy.com/v1/products(search=ram)?format=json&pageSize=5&apiKey=GVfY17LDc7x2vt4lBya2D26z")
-        if smoob != "" {
-            url = URL(string: "https://api.bestbuy.com/v1/products(search=\(smoob))?format=json&pageSize=5&apiKey=GVfY17LDc7x2vt4lBya2D26z")
+        var tonks = false
+        var url = URL(string: "https://api.bestbuy.com/v1/products(search=ram)?format=json&pageSize=10&apiKey=GVfY17LDc7x2vt4lBya2D26z")
+        if smoob.contains(" ") {
+            let array = smoob.components(separatedBy: " ")
+            smoob = "("
+            print(array)
+            for x in array {
+                if x != "" {
+                    smoob += "search=\(x)&"
+                    print(smoob)
+                }
+            }
+            print(smoob)
+            smoob += calculatePrice(answer3)
+            smoob.removeLast()
+            smoob += ")"
+            print(smoob)
+            let string = "https://api.bestbuy.com/v1/products\(smoob)?format=json&pageSize=10&apiKey=GVfY17LDc7x2vt4lBya2D26z"
+            print(string)
+            let str = string.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)
+            url = URL(string: str!)
+            tonks = true
             print(url?.absoluteString)
         }
+        if tonks == false {
+            var money = calculatePrice(answer3)
+            money.removeLast()
+            print(smoob)
+            print(money)
+            let notString = "https://api.bestbuy.com/v1/products(search=\(smoob)&\(money))?format=json&pageSize=10&apiKey=GVfY17LDc7x2vt4lBya2D26z"
+            print(notString)
+            let str = notString.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)
+            print(str)
+            url = URL(string: str!)
+            print(url)
+        }
         URLSession.shared.dataTask(with: url!) { (data, response, error) in
-//            print(data)
+            //            print(data)
             if let data = data {
-//                print(data as! NSData)
+                //                print(data as! NSData)
                 do {
                     guard let product = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) else { return }
                     let dictionary = product as! NSDictionary
@@ -107,22 +142,22 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
                         let salePrice = x["salePrice"] as! Double
                         let image = x["image"] as? String
                         let url = x["mobileUrl"] as! String
-                        self.arrayOfProducts.append(Gift(name: name, salePrice: salePrice, mobileUrl: URL(string: url)!, image: URL(string: image!)!, longDescription: longdes))
+                        self.arrayOfProducts.append(Gift(name: name, salePrice: salePrice, mobileUrl: URL(string: url)!, image: image, longDescription: longdes))
                         print(name + " " + String(salePrice))
                     }
-//                    guard let newProduct : NSData = try? NSKeyedArchiver.archivedData(withRootObject: product, requiringSecureCoding: true) as NSData? else { return }
-//                    print(newProduct)
-//                    let jsonData: NSData = try JSONSerialization.data(withJSONObject: product, options: JSONSerialization.WritingOptions.prettyPrinted) as NSData
-//                    print(jsonData)
-//                    let products = try JSONDecoder().deacode(Main.self, from: jsonData as Data)
-//                    print(products)
-//                    for x in products.products {
-//                        print(products.products.count)
-//                        self.arrayOfProducts.append(x)
-////                        let other = x.dt_txt + " " + x.weather.first!.description
-////                        self.temperatureData.append(String(x.main.temp) + " " + other)
-////                        print(self.temperatureData)
-//                    }
+                    //                    guard let newProduct : NSData = try? NSKeyedArchiver.archivedData(withRootObject: product, requiringSecureCoding: true) as NSData? else { return }
+                    //                    print(newProduct)
+                    //                    let jsonData: NSData = try JSONSerialization.data(withJSONObject: product, options: JSONSerialization.WritingOptions.prettyPrinted) as NSData
+                    //                    print(jsonData)
+                    //                    let products = try JSONDecoder().deacode(Main.self, from: jsonData as Data)
+                    //                    print(products)
+                    //                    for x in products.products {
+                    //                        print(products.products.count)
+                    //                        self.arrayOfProducts.append(x)
+                    ////                        let other = x.dt_txt + " " + x.weather.first!.description
+                    ////                        self.temperatureData.append(String(x.main.temp) + " " + other)
+                    ////                        print(self.temperatureData)
+                    //                    }
                     DispatchQueue.main.async {
                         self.resultTableView.reloadData()
                     }
@@ -130,8 +165,22 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
                     print("Error: \(err)")
                 }
             } else {
-//                print("yuh oh")
+                //                print("yuh oh")
             }
         }.resume()
+    }
+    
+    func calculatePrice(_ price : String) -> String {
+        var string = ""
+        let array = price.components(separatedBy: "-")
+        print(array)
+        let more = array[0]
+        string += "salePrice>\(more)&"
+        let less = array[1]
+        if less != "nada" {
+            string += "salePrice<\(less)&"
+        }
+        print(string)
+        return string
     }
 }
