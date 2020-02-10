@@ -23,9 +23,9 @@ class firstQuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         segue.alpha = 0
-        maleOutlet.frame.size = CGSize(width: 194, height: 137)
-        femaleOutlet.frame.size = CGSize(width: 194, height: 137)
-        otherOutlet.frame.size = CGSize(width: 194, height: 137)
+//        maleOutlet.frame.size = CGSize(width: 194, height: 137)
+//        femaleOutlet.frame.size = CGSize(width: 194, height: 137)
+//        otherOutlet.frame.size = CGSize(width: 194, height: 137)
     }
     
     @IBAction func maleButton(_ sender: Any) {
