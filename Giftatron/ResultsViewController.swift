@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 struct Main : Decodable {
     let products : [Gift]
@@ -50,6 +51,23 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
     
     @IBAction func clickedAddButton(_ sender: Any) {
         addNewItem()
+    }
+    func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
+                let cellTitle = tableView.cellForRow(at: indexPath)?.textLabel?.text
+        var url = URL(string: "")
+        for x in arrayOfProducts {
+            if cellTitle == x.name {
+                url = x.mobileUrl
+                break
+            }
+        }
+        let safariViewCOntroller = SFSafariViewController(url: url!)
+        present(safariViewCOntroller, animated: true,completion: nil)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
