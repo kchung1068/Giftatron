@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 struct Main : Decodable {
     let products : [Gift]
@@ -50,6 +51,35 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
     
     @IBAction func clickedAddButton(_ sender: Any) {
         addNewItem()
+    }
+    func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
+                let cellTitle = tableView.cellForRow(at: indexPath)?.textLabel?.text
+        var url = URL(string: "")
+        for x in arrayOfProducts {
+            if cellTitle == x.name {
+                url = x.mobileUrl
+                break
+            }
+        }
+        let safariViewCOntroller = SFSafariViewController(url: url!)
+        present(safariViewCOntroller, animated: true,completion: nil)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cellTitle = tableView.cellForRow(at: indexPath)?.textLabel?.text!
+        var gift = Gift(name: "", salePrice: 0, mobileUrl: URL(string: "http://google.com")!, image: "", longDescription: "")
+        for x in arrayOfProducts {
+                   if cellTitle == x.name {
+                    gift = x
+                       break
+                   }
+               }
+        let alert = UIAlertController(title: gift.name, message: "\(gift.mobileUrl)" + "\n" + "\(gift.salePrice)" + "\n" + "\((gift.longDescription)!)", preferredStyle: .alert)
+        let ok = UIAlertAction(title: "OK",style: .default,handler: nil)
+        alert.addAction(ok)
+        present(alert, animated: true)
+        
+
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
