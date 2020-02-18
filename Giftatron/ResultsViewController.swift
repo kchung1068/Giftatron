@@ -64,6 +64,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
             if let image = arrayOfProducts[indexPath.row].image {
                 url = URL(string: image)
             }
+            print(url)
             cell.imageView?.image = UIImage(ciImage: CIImage(contentsOf: url!)!)
             cell.detailTextLabel?.text = "$" + String(arrayOfProducts[indexPath.row].salePrice)
             return cell
@@ -92,40 +93,31 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
     func gimmeeBestBuy() {
         var tonks = false
         var url = URL(string: "https://api.bestbuy.com/v1/products(search=ram)?format=json&pageSize=10&apiKey=GVfY17LDc7x2vt4lBya2D26z")
-        if smoob.contains(" ") {
-            let array = smoob.components(separatedBy: " ")
-            smoob = "("
-            print(array)
-            for x in array {
-                if x != "" {
-                    smoob += "search=\(x)&"
-                    print(smoob)
-                }
+        var array : [String] = []
+        if smoob != "" {
+            array = smoob.components(separatedBy: " ")
+        }
+        smoob = "("
+        print(array)
+        for x in array {
+            if x != "" {
+                smoob += "search=\(x)&"
+                print(smoob)
             }
-            print(smoob)
-            smoob += calculatePrice(answer3)
-            smoob.removeLast()
-            smoob += ")"
-            print(smoob)
-            let string = "https://api.bestbuy.com/v1/products\(smoob)?format=json&pageSize=10&apiKey=GVfY17LDc7x2vt4lBya2D26z"
-            print(string)
-            let str = string.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)
-            url = URL(string: str!)
-            tonks = true
-            print(url?.absoluteString)
         }
-        if tonks == false {
-            var money = calculatePrice(answer3)
-            money.removeLast()
-            print(smoob)
-            print(money)
-            let notString = "https://api.bestbuy.com/v1/products(search=\(smoob)&\(money))?format=json&pageSize=10&apiKey=GVfY17LDc7x2vt4lBya2D26z"
-            print(notString)
-            let str = notString.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)
-            print(str)
-            url = URL(string: str!)
-            print(url)
-        }
+        print(smoob)
+        smoob += calculatePrice(answer3)
+        smoob += "department=\(answer4)&"
+        smoob.removeLast()
+        smoob += ")"
+        print(smoob)
+        let string = "https://api.bestbuy.com/v1/products\(smoob)?format=json&pageSize=10&apiKey=GVfY17LDc7x2vt4lBya2D26z"
+        print(string)
+        let str =   string.addingPercentEncoding(withAllowedCharacters:CharacterSet.urlQueryAllowed)
+        url = URL(string: str!)
+        tonks = true
+        print(url?.absoluteString)
+        
         URLSession.shared.dataTask(with: url!) { (data, response, error) in
             //            print(data)
             if let data = data {

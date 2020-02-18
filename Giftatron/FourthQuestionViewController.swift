@@ -49,7 +49,7 @@ class FourthQuestionViewController: UIViewController {
         blackViewTwo.alpha = 1
         blackViewThree.alpha = 1
         blackViewFour.alpha = 1
-        answer4 = "Beauty"
+        answer4 = "N/A"
         beautyOutlet.setBackgroundImage(UIImage(named: "Cyan Circle"), for: .normal)
         beautyOutlet.setTitleColor(.orange, for: .normal)
         
@@ -70,7 +70,7 @@ class FourthQuestionViewController: UIViewController {
         blackViewTwo.alpha = 1
                blackViewThree.alpha = 1
                blackViewFour.alpha = 1
-        answer4 = "Electronics"
+        answer4 = "COMPUTERS"
         beautyOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
         beautyOutlet.setTitleColor(.black, for: .normal)
         electronicOutlet.setBackgroundImage(UIImage(named: "Cyan Circle"), for: .normal)
@@ -90,7 +90,7 @@ class FourthQuestionViewController: UIViewController {
         blackViewTwo.alpha = 1
                blackViewThree.alpha = 1
                blackViewFour.alpha = 1
-        answer4 = "Music"
+        answer4 = ["VIDEO/COMPACT DISC", "MUSIC"].randomElement()!
         beautyOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
                beautyOutlet.setTitleColor(.black, for: .normal)
         electronicOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
@@ -109,7 +109,7 @@ class FourthQuestionViewController: UIViewController {
         blackViewTwo.alpha = 1
                blackViewThree.alpha = 1
                blackViewFour.alpha = 1
-        answer4 = "Gaming"
+        answer4 = "INTERACTIVE SOFTWARE"
         beautyOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
                       beautyOutlet.setTitleColor(.black, for: .normal)
                electronicOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
@@ -123,7 +123,7 @@ class FourthQuestionViewController: UIViewController {
     }
     
     @IBAction func english(_ sender: Any) {
-        answer4 = "English"
+        answer4 = "N/A"
         blackViewOne.alpha = 1
         segue.alpha = 1
         blackViewTwo.alpha = 1
