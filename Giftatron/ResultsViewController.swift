@@ -66,6 +66,18 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cellTitle = tableView.cellForRow(at: indexPath)?.textLabel?.text!
+        var gift = Gift(name: "", salePrice: 0, mobileUrl: URL(string: "http://google.com")!, image: "", longDescription: "")
+        for x in arrayOfProducts {
+                   if cellTitle == x.name {
+                    gift = x
+                       break
+                   }
+               }
+        let alert = UIAlertController(title: gift.name, message: "\(gift.mobileUrl)" + "\n" + "\(gift.salePrice)" + "\n" + "\((gift.longDescription)!)", preferredStyle: .alert)
+        let ok = UIAlertAction(title: "OK",style: .default,handler: nil)
+        alert.addAction(ok)
+        present(alert, animated: true)
         
 
     }
