@@ -11,7 +11,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Giftatron" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -247,31 +247,32 @@
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.87562148709999998" green="1" blue="0.21579359570000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="1" green="0.84401099239999999" blue="0.2183797294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="UTl-V5-FYh">
                                         <rect key="frame" x="0.0" y="618" width="810" height="206"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cyan Circle" translatesAutoresizingMaskIntoConstraints="NO" id="hrD-0k-Hc3">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Specter" translatesAutoresizingMaskIntoConstraints="NO" id="hrD-0k-Hc3">
                                                 <rect key="frame" x="0.0" y="0.0" width="270" height="206"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dollar Sign" translatesAutoresizingMaskIntoConstraints="NO" id="gQB-io-nXM">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Genderbread" translatesAutoresizingMaskIntoConstraints="NO" id="gQB-io-nXM">
                                                 <rect key="frame" x="270" y="0.0" width="270" height="206"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.down.on.square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2uW-tx-R3g">
-                                                <rect key="frame" x="540" y="-1.5" width="270" height="210"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Male and Female" translatesAutoresizingMaskIntoConstraints="NO" id="2uW-tx-R3g">
+                                                <rect key="frame" x="540" y="0.0" width="270" height="206"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zEH-Hk-H8b">
                                         <rect key="frame" x="0.0" y="824" width="810" height="206"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tray.full.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ss3-J8-Pew">
-                                                <rect key="frame" x="0.0" y="1.5" width="202.5" height="202.5"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pop Boy" translatesAutoresizingMaskIntoConstraints="NO" id="ss3-J8-Pew">
+                                                <rect key="frame" x="0.0" y="0.0" width="202.5" height="206"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Black Border" translatesAutoresizingMaskIntoConstraints="NO" id="sBR-3u-4Eb">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Combotrans" translatesAutoresizingMaskIntoConstraints="NO" id="sBR-3u-4Eb">
                                                 <rect key="frame" x="202.5" y="0.0" width="202.5" height="206"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Navy Blue Circle" translatesAutoresizingMaskIntoConstraints="NO" id="MqH-k8-K35">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pop Girl 2" translatesAutoresizingMaskIntoConstraints="NO" id="MqH-k8-K35">
                                                 <rect key="frame" x="405" y="0.0" width="202.5" height="206"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jxd-VV-JoG">
@@ -845,25 +846,27 @@
     </scenes>
     <resources>
         <image name="Alpha" width="1920" height="1920"/>
-        <image name="Black Border" width="241" height="124"/>
         <image name="Bright" width="217" height="217"/>
         <image name="Bubble" width="960" height="413"/>
         <image name="Businessman" width="427" height="998"/>
-        <image name="Cyan Circle" width="420" height="420"/>
+        <image name="Combotrans" width="1200" height="1200"/>
         <image name="Dollar Sign" width="234" height="388"/>
         <image name="Eagle Gold" width="565" height="563"/>
         <image name="Fire Flower" width="1728" height="1796"/>
+        <image name="Genderbread" width="557" height="607"/>
         <image name="Gray Circle" width="256" height="254"/>
         <image name="Guitar" width="1200" height="873"/>
         <image name="Hat" width="248" height="392"/>
         <image name="Jigsaw" width="221" height="223"/>
         <image name="Line" width="402" height="205"/>
+        <image name="Male and Female" width="495" height="512"/>
         <image name="Mario" width="630" height="630"/>
         <image name="Moneybags" width="877" height="535"/>
         <image name="Moneynati" width="275" height="183"/>
-        <image name="Navy Blue Circle" width="225" height="223"/>
         <image name="Next" width="512" height="404"/>
         <image name="Peace" width="508" height="512"/>
+        <image name="Pop Boy" width="303" height="570"/>
+        <image name="Pop Girl 2" width="581" height="889"/>
         <image name="Pot Gold" width="408" height="450"/>
         <image name="Raise" width="490" height="490"/>
         <image name="Relax" width="824" height="549"/>
@@ -872,6 +875,7 @@
         <image name="SS" width="532" height="338"/>
         <image name="Salevector" width="920" height="907"/>
         <image name="Santahat" width="230" height="158"/>
+        <image name="Specter" width="1918" height="1079"/>
         <image name="Spice" width="1276" height="2855"/>
         <image name="Swing" width="1296" height="1297"/>
         <image name="TV" width="626" height="626"/>
@@ -881,7 +885,5 @@
         <image name="arrowshape.turn.up.right.fill" catalog="system" width="64" height="52"/>
         <image name="celebration" width="512" height="512"/>
         <image name="money" width="1547" height="1593"/>
-        <image name="square.and.arrow.down.on.square" catalog="system" width="60" height="64"/>
-        <image name="tray.full.fill" catalog="system" width="64" height="44"/>
     </resources>
 </document>
