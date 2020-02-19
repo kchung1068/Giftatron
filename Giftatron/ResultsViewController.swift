@@ -137,7 +137,13 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
         }
         print(smoob)
         smoob += calculatePrice(answer3)
-        smoob += "department=\(answer4)&"
+        if answer4 != "N/A" {
+            if let numb = Int(answer4) {
+                smoob += "departmentId=\(numb)&"
+            } else {
+                smoob += "department=\(answer4)&"
+            }
+        }
         smoob.removeLast()
         smoob += ")"
         print(smoob)
