@@ -74,7 +74,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
                        break
                    }
                }
-        let alert = UIAlertController(title: gift.name, message: "\(gift.mobileUrl)" + "\n" + "\(gift.salePrice)" + "\n" + "\((gift.longDescription)!)", preferredStyle: .alert)
+        let alert = UIAlertController(title: gift.name, message: "\(gift.mobileUrl)" + "\n" + "\(gift.salePrice)" + "\n" + "\((gift.longDescription) ?? " ")", preferredStyle: .alert)
         let ok = UIAlertAction(title: "OK",style: .default,handler: nil)
         alert.addAction(ok)
         present(alert, animated: true)
@@ -96,7 +96,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
             }
             print(url)
             cell.imageView?.image = UIImage(ciImage: CIImage(contentsOf: url!)!)
-            cell.detailTextLabel?.text = "$" + String(arrayOfProducts[indexPath.row].salePrice)
+            cell.detailTextLabel?.text = "$" + String(arrayOfProducts[indexPath.row].salePrice) + "    " + "\(arrayOfProducts[indexPath.row].mobileUrl)"
             return cell
         } else {
             return UITableViewCell()
@@ -182,9 +182,9 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
                     //                    for x in products.products {
                     //                        print(products.products.count)
                     //                        self.arrayOfProducts.append(x)
-                    ////                        let other = x.dt_txt + " " + x.weather.first!.description
-                    ////                        self.temperatureData.append(String(x.main.temp) + " " + other)
-                    ////                        print(self.temperatureData)
+                    //                        let other = x.dt_txt + " " + x.weather.first!.description
+                    //                        self.temperatureData.append(String(x.main.temp) + " " + other)
+                    //                        print(self.temperatureData)
                     //                    }
                     DispatchQueue.main.async {
                         self.resultTableView.reloadData()
