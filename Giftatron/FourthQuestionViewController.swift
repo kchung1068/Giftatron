@@ -90,7 +90,7 @@ class FourthQuestionViewController: UIViewController {
         blackViewTwo.alpha = 1
                blackViewThree.alpha = 1
                blackViewFour.alpha = 1
-        answer4 = ["VIDEO/COMPACT DISC", "MUSIC"].randomElement()!
+        answer4 = ["8", "AUDIO"].randomElement()!
         beautyOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
                beautyOutlet.setTitleColor(.black, for: .normal)
         electronicOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
