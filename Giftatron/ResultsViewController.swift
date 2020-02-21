@@ -40,9 +40,6 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
         resultTableView.delegate = self
         resultTableView.dataSource = self
         gimmeeBestBuy()
-        //        arrayOfProducts.append(Product(image: UIImage(named: "Santahat")!, price: 20.0, name: "Cool Hat", url: "www.google.com"))
-        //        arrayOfProducts.append(Product(image: UIImage(named: "Pink Circle")!, price: 50.0, name: "Circle Kitchen Top", url: "www.yahoo.com"))
-        //        arrayOfProducts.append(Product(image: UIImage(named: "celebration")!, price: 100.0, name: "Party Materials", url: "www.Bing.com"))
     }
     override func viewDidAppear(_ animated: Bool) {
         navigationController?.navigationBar.topItem?.title = "Showing Results for " + friendName
