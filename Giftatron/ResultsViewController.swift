@@ -30,6 +30,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
     var answer3 = ""
     var answer4 = ""
     var smoob = ""
+    var product = 0
     var arrayOfAnswers: [String] = []
     
     
@@ -84,7 +85,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+        if product >= 0 && product <= 9 {
         if let cell = resultTableView.dequeueReusableCell(withIdentifier: "cell") {
             cell.textLabel?.text = arrayOfProducts[indexPath.row].name
             var url = URL(string: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png")
@@ -94,9 +95,31 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
             print(url)
             cell.imageView?.image = UIImage(ciImage: CIImage(contentsOf: url!)!)
             cell.detailTextLabel?.text = "$" + String(arrayOfProducts[indexPath.row].salePrice) + "    " + "\(arrayOfProducts[indexPath.row].mobileUrl)"
+            product += 1
             return cell
         } else {
             return UITableViewCell()
+        }
+        } else if product == 10 {
+            let cell = resultTableView.dequeueReusableCell(withIdentifier: "cell")
+            cell?.textLabel?.text = "Ebay:"
+            product += 1
+            return cell!
+        }else {
+            if let cell = resultTableView.dequeueReusableCell(withIdentifier: "cell") {
+                cell.textLabel?.text = arrayOfProducts[indexPath.row].name
+                var url = URL(string: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png")
+                if let image = arrayOfProducts[indexPath.row].image {
+                    url = URL(string: image)
+                }
+                print(url)
+                cell.imageView?.image = UIImage(ciImage: CIImage(contentsOf: url!)!)
+                cell.detailTextLabel?.text = "$" + String(arrayOfProducts[indexPath.row].salePrice) + "    " + "\(arrayOfProducts[indexPath.row].mobileUrl)"
+                product += 1
+                return cell
+            } else {
+                return UITableViewCell()
+        }
         }
     }
     func addNewItem() {
