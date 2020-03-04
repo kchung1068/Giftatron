@@ -118,18 +118,18 @@
             <objects>
                 <viewController id="5rM-GQ-8mK" customClass="ResultsViewController" customModule="Giftatron" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zRy-4S-fqX">
-                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="1006.9200564096436"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lSb-U1-ucx">
-                                <rect key="frame" x="0.0" y="50" width="810" height="1030"/>
+                                <rect key="frame" x="0.0" y="0.0" width="712" height="1007"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="detailButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" editingAccessoryType="detailButton" textLabel="mDv-oz-kTO" detailTextLabel="C0C-YM-1CM" style="IBUITableViewCellStyleSubtitle" id="dz8-do-2IN">
-                                        <rect key="frame" x="0.0" y="28" width="810" height="55.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="712" height="55.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dz8-do-2IN" id="lcv-Dh-HnB">
-                                            <rect key="frame" x="0.0" y="0.0" width="771" height="55.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="673" height="55.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mDv-oz-kTO">
@@ -175,14 +175,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ede-Zt-E88" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5329" y="147"/>
+            <point key="canvasLocation" x="4623" y="179"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="oNZ-sL-aPZ">
             <objects>
                 <viewController id="eUb-WP-FRV" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3ZG-ls-enX">
-                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="1006.9200564096436"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53E-3b-2Y1">
@@ -228,7 +228,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3lT-tc-Ou7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6451" y="244"/>
+            <point key="canvasLocation" x="6341" y="179"/>
         </scene>
         <!--First Question View Controller-->
         <scene sceneID="hqJ-dj-SRH">
@@ -700,7 +700,7 @@
                                                     <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="3xP-qR-J0l" kind="show" id="TI8-gM-hRv"/>
+                                                    <segue destination="5rM-GQ-8mK" kind="show" id="22W-6h-V5b"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -762,7 +762,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M4w-JN-Vp8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4542" y="147"/>
+            <point key="canvasLocation" x="5488" y="179"/>
         </scene>
         <!--Third Question View Controller-->
         <scene sceneID="OwK-Ue-TAJ">
@@ -982,4 +982,7 @@
         <image name="celebration" width="512" height="512"/>
         <image name="money" width="1547" height="1593"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Iol-jr-gzd"/>
+    </inferredMetricsTieBreakers>
 </document>
