@@ -32,10 +32,6 @@ class FourthQuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         segue.alpha = 0
-        blackViewOne.alpha = 0
-        blackViewTwo.alpha = 0
-        blackViewThree.alpha = 0
-        blackViewFour.alpha = 0
         beautyOutlet.frame.size = CGSize(width: 307, height: 137)
         electronicOutlet.frame.size = CGSize(width: 400, height: 137)
         musicOutlet.frame.size = CGSize(width: 292, height: 137)
@@ -45,10 +41,6 @@ class FourthQuestionViewController: UIViewController {
     
     @IBAction func beauty(_ sender: Any) {
         segue.alpha = 1
-        blackViewOne.alpha = 1
-        blackViewTwo.alpha = 1
-        blackViewThree.alpha = 1
-        blackViewFour.alpha = 1
         answer4 = "N/A"
         beautyOutlet.setBackgroundImage(UIImage(named: "Cyan Circle"), for: .normal)
         beautyOutlet.setTitleColor(.orange, for: .normal)
@@ -86,10 +78,6 @@ class FourthQuestionViewController: UIViewController {
     
     @IBAction func music(_ sender: Any) {
         segue.alpha = 1
-        blackViewOne.alpha = 1
-        blackViewTwo.alpha = 1
-               blackViewThree.alpha = 1
-               blackViewFour.alpha = 1
         answer4 = ["8", "AUDIO"].randomElement()!
         beautyOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
                beautyOutlet.setTitleColor(.black, for: .normal)
@@ -105,10 +93,6 @@ class FourthQuestionViewController: UIViewController {
     }
     @IBAction func gaming(_ sender: Any) {
         segue.alpha = 1
-        blackViewOne.alpha = 1
-        blackViewTwo.alpha = 1
-               blackViewThree.alpha = 1
-               blackViewFour.alpha = 1
         answer4 = "INTERACTIVE SOFTWARE"
         beautyOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
                       beautyOutlet.setTitleColor(.black, for: .normal)
@@ -124,11 +108,7 @@ class FourthQuestionViewController: UIViewController {
     
     @IBAction func english(_ sender: Any) {
         answer4 = "N/A"
-        blackViewOne.alpha = 1
         segue.alpha = 1
-        blackViewTwo.alpha = 1
-               blackViewThree.alpha = 1
-               blackViewFour.alpha = 1
         beautyOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
                             beautyOutlet.setTitleColor(.black, for: .normal)
                      electronicOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
