@@ -10,13 +10,13 @@ import UIKit
 import SafariServices
 
 struct Main : Decodable {
-    let products : [Gift]
+    let products : [Gift] // itemSummaries
 }
 struct Gift : Decodable {
-    let name : String
-    let salePrice : Double
-    let mobileUrl : URL
-    let image : String?
+    let name : String //title
+    let salePrice : Double //price -> value
+    let mobileUrl : URL // itemWebUrl
+    let image : String? // image -> imageUrl
     let longDescription : String?
 }
 
@@ -189,6 +189,22 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
                     DispatchQueue.main.async {
                         self.resultTableView.reloadData()
                     }
+                } catch let err {
+                    print("Error: \(err)")
+                }
+            } else {
+                //                print("yuh oh")
+            }
+        }.resume()
+    }
+    func gimmeEbay() {
+        var url = URL(string: "https://www.google.com")
+        URLSession.shared.dataTask(with: url!) { (data, error, response) in
+            
+            if let data = data {
+                
+                do {
+                    
                 } catch let err {
                     print("Error: \(err)")
                 }
