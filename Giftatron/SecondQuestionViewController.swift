@@ -48,7 +48,7 @@ class SecondQuestionViewController: UIViewController {
     }
     
     @IBAction func threeTen(_ sender: Any) {
-        answer2 = "3-10"
+        answer2 = "4-10"
         segue.alpha = 1
         threeTenOutlet.setBackgroundImage(UIImage(named: "Yellow Circle"), for: .normal)
         threeTenOutlet.setTitleColor(.red, for: .normal)
@@ -62,7 +62,7 @@ class SecondQuestionViewController: UIViewController {
     }
     
     @IBAction func tenEighteen(_ sender: Any) {
-        answer2 = "10-18"
+        answer2 = "11-18"
         segue.alpha = 1
         tenEighteenOutlet.setBackgroundImage(UIImage(named: "Yellow Circle"), for: .normal)
         tenEighteenOutlet.setTitleColor(.systemRed, for: .normal)
@@ -75,7 +75,7 @@ class SecondQuestionViewController: UIViewController {
     }
     
     @IBAction func eighteenFifty(_ sender: Any) {
-        answer2 = "18-50"
+        answer2 = "19-50"
         segue.alpha = 1
         eighteenFiftyOutlet.setBackgroundImage(UIImage(named: "Yellow Circle"), for: .normal)
         eighteenFiftyOutlet.setTitleColor(.red, for: .normal)
