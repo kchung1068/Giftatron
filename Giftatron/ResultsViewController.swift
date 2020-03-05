@@ -17,7 +17,7 @@ struct Gift : Decodable {
     let salePrice : Double //price -> value
     let mobileUrl : URL // itemWebUrl
     let image : String? // image -> imageUrl
-    let longDescription : String?
+    let longDescription : String? // X
 }
 
 
