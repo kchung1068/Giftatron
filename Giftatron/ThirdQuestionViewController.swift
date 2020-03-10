@@ -2,7 +2,7 @@
 //  ThirdQuestionViewController.swift
 //  Giftatron
 //
-//  Created by Michael Linker on 12/13/19.
+//  Created by Michael Linker, and Kyle and Emmett on 12/13/19.
 //  Copyright © 2019 John Hersey High School. All rights reserved.
 //
 
