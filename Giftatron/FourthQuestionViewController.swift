@@ -13,7 +13,7 @@ class FourthQuestionViewController: UIViewController {
     var answer1 = ""
        var answer2 = ""
     var answer3 = ""
-    var answer4 = ""
+    var answer4 = "N/A"
     var smoob = ""
     var arrayOfAnswers: [String] = []
     @IBOutlet weak var segue: UIButton!
@@ -31,7 +31,7 @@ class FourthQuestionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        segue.alpha = 0
+        segue.alpha = 1
         beautyOutlet.frame.size = CGSize(width: 307, height: 137)
         electronicOutlet.frame.size = CGSize(width: 400, height: 137)
         musicOutlet.frame.size = CGSize(width: 292, height: 137)
@@ -53,15 +53,15 @@ class FourthQuestionViewController: UIViewController {
         gamingOutlet.setTitleColor(.black, for: .normal)
         englishOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
         englishOutlet.setTitleColor(.black, for: .normal)
-        
+        segue.titleLabel?.text = "Go On"
     }
     
     @IBAction func electronic(_ sender: Any) {
         segue.alpha = 1
-        blackViewOne.alpha = 1
-        blackViewTwo.alpha = 1
-               blackViewThree.alpha = 1
-               blackViewFour.alpha = 1
+//        blackViewOne.alpha = 1
+//        blackViewTwo.alpha = 1
+//               blackViewThree.alpha = 1
+//               blackViewFour.alpha = 1
         answer4 = "COMPUTERS"
         beautyOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
         beautyOutlet.setTitleColor(.black, for: .normal)
@@ -73,7 +73,7 @@ class FourthQuestionViewController: UIViewController {
         gamingOutlet.setTitleColor(.black, for: .normal)
         englishOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
         englishOutlet.setTitleColor(.black, for: .normal)
-        
+        segue.titleLabel?.text = "Go On"
     }
     
     @IBAction func music(_ sender: Any) {
@@ -89,7 +89,7 @@ class FourthQuestionViewController: UIViewController {
         gamingOutlet.setTitleColor(.black, for: .normal)
         englishOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
         englishOutlet.setTitleColor(.black, for: .normal)
-        
+        segue.titleLabel?.text = "Go On"
     }
     @IBAction func gaming(_ sender: Any) {
         segue.alpha = 1
@@ -104,6 +104,7 @@ class FourthQuestionViewController: UIViewController {
                musicOutlet.setTitleColor(.black, for: .normal)
         englishOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
                englishOutlet.setTitleColor(.black, for: .normal)
+        segue.titleLabel?.text = "Go On"
     }
     
     @IBAction func english(_ sender: Any) {
@@ -119,6 +120,7 @@ class FourthQuestionViewController: UIViewController {
         gamingOutlet.setTitleColor(.black, for: .normal)
         englishOutlet.setBackgroundImage(UIImage(named: "Cyan Circle"), for: .normal)
         englishOutlet.setTitleColor(.orange, for: .normal)
+        segue.titleLabel?.text = "Go On"
     }
     
     

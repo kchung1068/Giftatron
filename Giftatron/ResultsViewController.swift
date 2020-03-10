@@ -125,9 +125,10 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
     func addNewItem() {
         let alert = UIAlertController(title: "New Item", message: "enter your item name below", preferredStyle: .alert)
         alert.addTextField { (TextField) in
-            TextField.placeholder = "price"
+            TextField.placeholder = "Price"
         }
         alert.addTextField { (TextField2) in
+            TextField2.placeholder = "Name"
         }
         alert.addTextField { (TextField3) in
         }
