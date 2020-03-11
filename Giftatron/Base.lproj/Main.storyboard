@@ -11,7 +11,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Giftatron" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -122,7 +122,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lSb-U1-ucx">
-                                <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
+                                <rect key="frame" x="0.0" y="50" width="810" height="1030"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="detailButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" editingAccessoryType="detailButton" textLabel="mDv-oz-kTO" detailTextLabel="C0C-YM-1CM" style="IBUITableViewCellStyleSubtitle" id="dz8-do-2IN">
@@ -167,9 +167,6 @@
                             <rect key="frame" x="382" y="10" width="46" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Button"/>
-                            <connections>
-                                <segue destination="3xP-qR-J0l" kind="show" id="q7f-LK-qRE"/>
-                            </connections>
                         </button>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="b0f-CD-Wca">
                             <connections>
@@ -179,19 +176,18 @@
                     </navigationItem>
                     <connections>
                         <outlet property="resultTableView" destination="lSb-U1-ucx" id="Y9L-y1-7g2"/>
-                        <segue destination="eUb-WP-FRV" kind="show" id="NjJ-qY-8Af"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ede-Zt-E88" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4622.9629629629626" y="178.88888888888889"/>
+            <point key="canvasLocation" x="7113" y="211"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="oNZ-sL-aPZ">
             <objects>
                 <viewController id="eUb-WP-FRV" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3ZG-ls-enX">
-                        <rect key="frame" x="0.0" y="0.0" width="712" height="1006.9200564096436"/>
+                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53E-3b-2Y1">
@@ -229,6 +225,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfZ-AO-fz1">
+                                <rect key="frame" x="680" y="950" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="5rM-GQ-8mK" kind="show" id="xY0-xQ-qkk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="999-5T-Jxa"/>
@@ -734,10 +738,10 @@
             </objects>
             <point key="canvasLocation" x="3959" y="171"/>
         </scene>
-        <!--View Controller-->
+        <!--Fifth View Controller-->
         <scene sceneID="6XF-8v-lW2">
             <objects>
-                <viewController id="3xP-qR-J0l" sceneMemberID="viewController">
+                <viewController id="3xP-qR-J0l" customClass="FifthViewController" customModule="Giftatron" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GU1-i4-kyN">
                         <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -784,6 +788,9 @@
                                 <rect key="frame" x="624" y="937" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="eUb-WP-FRV" kind="show" id="uxI-Ff-dHz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -793,7 +800,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M4w-JN-Vp8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5487.4074074074069" y="178.88888888888889"/>
+            <point key="canvasLocation" x="5336" y="10"/>
         </scene>
         <!--Third Question View Controller-->
         <scene sceneID="OwK-Ue-TAJ">
@@ -999,7 +1006,4 @@
         <image name="celebration" width="512" height="512"/>
         <image name="money" width="1547" height="1593"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Zlf-Fw-8Sw"/>
-    </inferredMetricsTieBreakers>
 </document>
