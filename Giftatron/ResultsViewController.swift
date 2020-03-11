@@ -17,7 +17,7 @@ struct Gift : Decodable {
     let salePrice : Double //price -> value
     let mobileUrl : URL // itemWebUrl
     let image : String? // image -> imageUrl
-    let longDescription : String?
+    let longDescription : String? // X
 }
 
 
@@ -51,7 +51,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
         addNewItem()
     }
     func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
-                let cellTitle = tableView.cellForRow(at: indexPath)?.textLabel?.text
+        let cellTitle = tableView.cellForRow(at: indexPath)?.textLabel?.text
         var url = URL(string: "")
         for x in arrayOfProducts {
             if cellTitle == x.name {
@@ -142,37 +142,46 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
     }
     
     func gimmeeBestBuy() {
-        var tonks = false
+        var smood = smoob
+        var ans4 = answer4
+        let randysHelper = Int.random(in: 1...3)
+        switch randysHelper {
+        case 1:
+            ans4 = ""
+        case 2:
+            smood = ""
+        default:
+            print("Default")
+        }
         var url = URL(string: "https://api.bestbuy.com/v1/products(search=ram)?format=json&pageSize=10&apiKey=GVfY17LDc7x2vt4lBya2D26z")
         var array : [String] = []
-        if smoob != "" {
+        if smood != "" {
             array = smoob.components(separatedBy: " ")
         }
-        smoob = "("
+        smood = "("
         print(array)
         for x in array {
             if x != "" {
-                smoob += "search=\(x)&"
-                print(smoob)
+                smood += "search=\(x)&"
+                print(smood)
             }
         }
-        print(smoob)
-        smoob += calculatePrice(answer3)
-        if answer4 != "N/A" {
-            if let numb = Int(answer4) {
-                smoob += "departmentId=\(numb)&"
+        print(smood)
+        smood += calculatePrice(answer3)
+        if ans4 != "" {
+            if let numb = Int(ans4) {
+                smood += "departmentId=\(numb)&"
             } else {
-                smoob += "department=\(answer4)&"
+                smood += "department=\(ans4)&"
             }
         }
-        smoob.removeLast()
-        smoob += ")"
-        print(smoob)
-        let string = "https://api.bestbuy.com/v1/products\(smoob)?format=json&pageSize=10&apiKey=GVfY17LDc7x2vt4lBya2D26z"
+        smood.removeLast()
+        smood += ")"
+        print(smood)
+        let string = "https://api.bestbuy.com/v1/products\(smood)?format=json&pageSize=10&apiKey=GVfY17LDc7x2vt4lBya2D26z"
         print(string)
         let str =   string.addingPercentEncoding(withAllowedCharacters:CharacterSet.urlQueryAllowed)
         url = URL(string: str!)
-        tonks = true
         print(url?.absoluteString)
         
         URLSession.shared.dataTask(with: url!) { (data, response, error) in
