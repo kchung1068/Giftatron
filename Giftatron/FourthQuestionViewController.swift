@@ -14,6 +14,8 @@ class FourthQuestionViewController: UIViewController {
        var answer2 = ""
     var answer3 = ""
     var answer4 = "N/A"
+    var answer5 = ""
+    
     var smoob = ""
     var arrayOfAnswers: [String] = []
     @IBOutlet weak var segue: UIButton!
@@ -125,18 +127,16 @@ class FourthQuestionViewController: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let nvc = segue.destination as! ResultsViewController
+        let nvc = segue.destination as! FifthViewController
         nvc.answer1 = answer1
         nvc.answer2 = answer2
         nvc.answer3 = answer3
         nvc.answer4 = answer4
+        nvc.answer5 = answer5
         nvc.friendName = friendName
         nvc.smoob = smoob
         
-        arrayOfAnswers.append(answer1)
-        arrayOfAnswers.append(answer2)
-        arrayOfAnswers.append(answer3)
-        arrayOfAnswers.append(answer4)
+        
 //         print(friendName)
 //                      print(answer1)
 //                      print(answer2)

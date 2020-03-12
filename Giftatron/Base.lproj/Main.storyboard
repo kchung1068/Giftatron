@@ -163,11 +163,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="5uP-8g-FVe">
                         <nil key="title"/>
-                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Nez-Mp-bFG">
-                            <rect key="frame" x="382" y="10" width="46" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Button"/>
-                        </button>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="b0f-CD-Wca">
                             <connections>
                                 <action selector="clickedAddButton:" destination="5rM-GQ-8mK" id="Hjc-1b-MmT"/>
@@ -180,7 +175,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ede-Zt-E88" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7113" y="211"/>
+            <point key="canvasLocation" x="5698" y="171"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="oNZ-sL-aPZ">
@@ -229,9 +224,6 @@
                                 <rect key="frame" x="680" y="950" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="5rM-GQ-8mK" kind="show" id="xY0-xQ-qkk"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -241,7 +233,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3lT-tc-Ou7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6341" y="179"/>
+            <point key="canvasLocation" x="6532" y="179"/>
         </scene>
         <!--First Question View Controller-->
         <scene sceneID="hqJ-dj-SRH">
@@ -439,12 +431,12 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="UE2-ID-alj">
                                         <rect key="frame" x="0.0" y="343.5" width="810" height="171.5"/>
                                         <subviews>
-                                            <view alpha="0.0" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bkx-50-irb">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="171.5"/>
+                                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bkx-50-irb">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="171.5"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p93-Ni-TjH">
-                                                <rect key="frame" x="87" y="0.0" width="256" height="171.5"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p93-Ni-TjH">
+                                                <rect key="frame" x="0.0" y="0.0" width="405" height="171.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                                 <state key="normal" title="11-18 years" backgroundImage="Gray Circle">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -453,12 +445,12 @@
                                                     <action selector="tenEighteen:" destination="c0H-xh-6js" eventType="touchUpInside" id="TQ6-10-TLJ"/>
                                                 </connections>
                                             </button>
-                                            <view alpha="0.0" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rcc-Z5-CSe">
-                                                <rect key="frame" x="380" y="0.0" width="50" height="171.5"/>
+                                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rcc-Z5-CSe">
+                                                <rect key="frame" x="405" y="0.0" width="0.0" height="171.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAw-mZ-QnG">
-                                                <rect key="frame" x="467" y="0.0" width="256" height="171.5"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAw-mZ-QnG">
+                                                <rect key="frame" x="405" y="0.0" width="405" height="171.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                                 <state key="normal" title="19-50 years" backgroundImage="Gray Circle">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -467,8 +459,8 @@
                                                     <action selector="eighteenFifty:" destination="c0H-xh-6js" eventType="touchUpInside" id="BAr-r8-bS6"/>
                                                 </connections>
                                             </button>
-                                            <view alpha="0.0" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cRb-jR-8lJ">
-                                                <rect key="frame" x="760" y="0.0" width="50" height="171.5"/>
+                                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cRb-jR-8lJ">
+                                                <rect key="frame" x="810" y="0.0" width="0.0" height="171.5"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                             </view>
                                         </subviews>
@@ -476,12 +468,12 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="NbC-Bo-R3O">
                                         <rect key="frame" x="0.0" y="515" width="810" height="171.5"/>
                                         <subviews>
-                                            <view alpha="0.0" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JKL-oc-cde">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="171.5"/>
+                                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JKL-oc-cde">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="171.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqz-tU-Tmp">
-                                                <rect key="frame" x="87" y="0.0" width="256" height="171.5"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqz-tU-Tmp">
+                                                <rect key="frame" x="0.0" y="0.0" width="405" height="171.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                                 <state key="normal" title="0-3 years" backgroundImage="Gray Circle">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -490,12 +482,12 @@
                                                     <action selector="zeroThree:" destination="c0H-xh-6js" eventType="touchUpInside" id="9JP-uK-cTK"/>
                                                 </connections>
                                             </button>
-                                            <view alpha="0.0" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZrD-oG-jE5">
-                                                <rect key="frame" x="380" y="0.0" width="50" height="171.5"/>
+                                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZrD-oG-jE5">
+                                                <rect key="frame" x="405" y="0.0" width="0.0" height="171.5"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58f-Bi-kqH">
-                                                <rect key="frame" x="467" y="0.0" width="256" height="171.5"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58f-Bi-kqH">
+                                                <rect key="frame" x="405" y="0.0" width="405" height="171.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                                 <state key="normal" title="4-10 years" backgroundImage="Gray Circle">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -504,8 +496,8 @@
                                                     <action selector="threeTen:" destination="c0H-xh-6js" eventType="touchUpInside" id="z1f-oR-9gn"/>
                                                 </connections>
                                             </button>
-                                            <view alpha="0.0" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FKZ-fe-5Kb">
-                                                <rect key="frame" x="760" y="0.0" width="50" height="171.5"/>
+                                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FKZ-fe-5Kb">
+                                                <rect key="frame" x="810" y="0.0" width="0.0" height="171.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                         </subviews>
@@ -531,7 +523,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="202.5" height="171.5"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Thonk" translatesAutoresizingMaskIntoConstraints="NO" id="Jlf-xB-IdC">
-                                                <rect key="frame" x="202.5" y="0.0" width="202.5" height="171.50000000000023"/>
+                                                <rect key="frame" x="202.5" y="0.0" width="202.5" height="171.5"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Swing" translatesAutoresizingMaskIntoConstraints="NO" id="1vS-cA-JD5">
                                                 <rect key="frame" x="405" y="0.0" width="202.5" height="171.5"/>
@@ -584,7 +576,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LCF-vJ-NtX">
                                 <rect key="frame" x="0.0" y="20" width="810" height="1060"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your friend most passionate about? (If none of these apply, you can go on)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoY-Eu-kVJ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your friend most passionate about? (If none of these apply, you can go on)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoY-Eu-kVJ">
                                         <rect key="frame" x="0.0" y="0.0" width="810" height="176.5"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="37"/>
@@ -692,7 +684,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="202.5" height="176.5"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Relax" translatesAutoresizingMaskIntoConstraints="NO" id="YDO-Kx-eEJ">
-                                                <rect key="frame" x="202.5" y="0.0" width="202.50000000000023" height="176.5"/>
+                                                <rect key="frame" x="202.5" y="0.0" width="202.5" height="176.5"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mario" translatesAutoresizingMaskIntoConstraints="NO" id="0Xz-Zz-7C9">
                                                 <rect key="frame" x="405" y="0.0" width="202.5" height="176.5"/>
@@ -759,37 +751,52 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Birthday Party"/>
+                                <connections>
+                                    <action selector="birthday:" destination="3xP-qR-J0l" eventType="touchUpInside" id="JHu-ar-cSa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVh-Kh-gBK">
                                 <rect key="frame" x="198" y="354" width="190" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Banquet"/>
+                                <connections>
+                                    <action selector="banquet:" destination="3xP-qR-J0l" eventType="touchUpInside" id="Yha-M1-xPV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UU8-BA-t6c">
                                 <rect key="frame" x="396" y="354" width="150" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Graduation"/>
+                                <connections>
+                                    <action selector="graduation:" destination="3xP-qR-J0l" eventType="touchUpInside" id="wdn-rd-J5w"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15h-br-mws">
                                 <rect key="frame" x="79" y="536" width="204" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Holiday"/>
+                                <connections>
+                                    <action selector="holiday:" destination="3xP-qR-J0l" eventType="touchUpInside" id="IIh-wd-RUJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTB-TP-2SU">
                                 <rect key="frame" x="419" y="526" width="146" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Wedding"/>
+                                <connections>
+                                    <action selector="wedding:" destination="3xP-qR-J0l" eventType="touchUpInside" id="qN4-ME-TCW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRE-yY-B8T">
                                 <rect key="frame" x="624" y="937" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="eUb-WP-FRV" kind="show" id="uxI-Ff-dHz"/>
+                                    <segue destination="5rM-GQ-8mK" kind="show" id="Mcz-Od-qmm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -800,7 +807,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M4w-JN-Vp8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5336" y="10"/>
+            <point key="canvasLocation" x="4704" y="178"/>
         </scene>
         <!--Third Question View Controller-->
         <scene sceneID="OwK-Ue-TAJ">

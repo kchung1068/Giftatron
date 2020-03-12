@@ -29,6 +29,8 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
     var answer2 = ""
     var answer3 = ""
     var answer4 = ""
+    var answer5 = ""
+    
     var smoob = ""
     var product = 0
     var arrayOfAnswers: [String] = []
@@ -137,7 +139,10 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
             //            self.arrayOfProducts.append(item)
             self.resultTableView.reloadData()
         }
+        let cancel = UIAlertAction(title: "Cancel", style: .destructive, handler: nil)
+        
         alert.addAction(OK)
+        alert.addAction(cancel)
         present(alert, animated: true, completion: nil)
     }
     
@@ -250,10 +255,10 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
         print(array)
         let more = array[0]
         string += "salePrice>\(more)&"
-        let less = array[1]
-        if less != "nada" {
-            string += "salePrice<\(less)&"
-        }
+       // let less = array[1]
+//        if less != "nada" {
+//            string += "salePrice<\(less)&"
+//        }
         print(string)
         return string
     }
