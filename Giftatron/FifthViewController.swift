@@ -9,13 +9,19 @@ import UIKit
 
 class FifthViewController: UIViewController {
     
-    var friendName = ""
-       var answer1 = ""
-          var answer2 = ""
-       var answer3 = ""
-       var answer4 = ""
-    var answer5 = ""
+    @IBOutlet weak var birthdayOutlet: UIButton!
+    @IBOutlet weak var graduationOutlet: UIButton!
+    @IBOutlet weak var holidayOutlet: UIButton!
+    @IBOutlet weak var weddingOutlet: UIButton!
+    @IBOutlet weak var banquetOutlet: UIButton!
     
+    
+    var friendName = ""
+    var answer1 = ""
+    var answer2 = ""
+    var answer3 = ""
+    var answer4 = ""
+    var answer5 = ""
     var smoob = ""
     var arrayOfAnswers: [String] = []
     
@@ -27,17 +33,23 @@ class FifthViewController: UIViewController {
     }
     
     @IBAction func birthday(_ sender: Any) {
-        
+        answer5 = "birthday party"
     }
     
     @IBAction func banquet(_ sender: Any) {
+        answer5 = "banquet"
     }
     @IBAction func graduation(_ sender: Any) {
+    answer5 = "graduation"
+    
+        
     }
     @IBAction func holiday(_ sender: Any) {
+        answer5 = "holiday"
     }
     
     @IBAction func wedding(_ sender: Any) {
+        answer5 = "wedding"
     }
     
     
