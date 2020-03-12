@@ -114,7 +114,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
                 if let image = arrayOfProducts[indexPath.row].image {
                     url = URL(string: image)
                 }
-                print(url)
+//                print(url)
                 cell.imageView?.image = UIImage(ciImage: CIImage(contentsOf: url!)!)
                 cell.detailTextLabel?.text = "$" + String(arrayOfProducts[indexPath.row].salePrice) + "    " + "\(arrayOfProducts[indexPath.row].mobileUrl)"
                 product += 1
@@ -125,9 +125,8 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
         }
     }
     func addNewItem() {
-        print("Gamer")
         arrayOfAnswers.removeAll()
-        
+        resultTableView.reloadData()
         gimmeeBestBuy()
 //        let alert = UIAlertController(title: "New Item", message: "enter your item name below", preferredStyle: .alert)
 //        alert.addTextField { (TextField) in
@@ -169,14 +168,14 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
             array = smoob.components(separatedBy: " ")
         }
         smood = "("
-        print(array)
+//        print(array)
         for x in array {
             if x != "" {
                 smood += "search=\(x)&"
-                print(smood)
+//                print(smood)
             }
         }
-        print(smood)
+//        print(smood)
         smood += calculatePrice(answer3)
         if ans4 != "" {
             if let numb = Int(ans4) {
@@ -189,10 +188,10 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
         smood += ")"
         print(smood)
         let string = "https://api.bestbuy.com/v1/products\(smood)?format=json&pageSize=10&apiKey=GVfY17LDc7x2vt4lBya2D26z"
-        print(string)
+//        print(string)
         let str =   string.addingPercentEncoding(withAllowedCharacters:CharacterSet.urlQueryAllowed)
         url = URL(string: str!)
-        print(url?.absoluteString)
+//        print(url?.absoluteString)
         
         URLSession.shared.dataTask(with: url!) { (data, response, error) in
             //            print(data)
@@ -202,7 +201,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
                     guard let product = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) else { return }
                     let dictionary = product as! NSDictionary
                     let myProducts = dictionary["products"] as! NSArray
-                    print(dictionary["products"])
+//                    print(dictionary["products"])
                     for x in myProducts {
                         let x = x as! NSDictionary
                         let name = x["name"] as! String
@@ -211,7 +210,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
                         let image = x["image"] as? String
                         let url = x["mobileUrl"] as! String
                         self.arrayOfProducts.append(Gift(name: name, salePrice: salePrice, mobileUrl: URL(string: url)!, image: image, longDescription: longdes))
-                        print(name + " " + String(salePrice))
+//                        print(name + " " + String(salePrice))
                     }
                     //                    guard let newProduct : NSData = try? NSKeyedArchiver.archivedData(withRootObject: product, requiringSecureCoding: true) as NSData? else { return }
                     //                    print(newProduct)
@@ -257,14 +256,14 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
     func calculatePrice(_ price : String) -> String {
         var string = ""
         let array = price.components(separatedBy: "-")
-        print(array)
+//        print(array)
         let more = array[0]
         string += "salePrice>\(more)&"
-       // let less = array[1]
-//        if less != "nada" {
-//            string += "salePrice<\(less)&"
-//        }
-        print(string)
+        let less = array[1]
+        if less != "nada" {
+            string += "salePrice<\(less)&"
+        }
+//        print(string)
         return string
     }
 }
