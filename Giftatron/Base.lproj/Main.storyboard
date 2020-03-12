@@ -163,7 +163,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="5uP-8g-FVe">
                         <nil key="title"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="b0f-CD-Wca">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="b0f-CD-Wca">
                             <connections>
                                 <action selector="clickedAddButton:" destination="5rM-GQ-8mK" id="Hjc-1b-MmT"/>
                             </connections>
