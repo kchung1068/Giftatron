@@ -125,6 +125,10 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
         }
     }
     func addNewItem() {
+        print("Gamer")
+        arrayOfAnswers.removeAll()
+        
+        gimmeeBestBuy()
 //        let alert = UIAlertController(title: "New Item", message: "enter your item name below", preferredStyle: .alert)
 //        alert.addTextField { (TextField) in
 //            TextField.placeholder = "Price"
@@ -150,6 +154,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
         var smood = smoob
         var ans4 = answer4
         let randysHelper = Int.random(in: 1...3)
+        print(randysHelper)
         switch randysHelper {
         case 1:
             ans4 = ""
