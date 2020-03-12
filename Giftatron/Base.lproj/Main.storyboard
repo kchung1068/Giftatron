@@ -579,7 +579,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your friend most passionate about? (If none of these apply, you can go on)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoY-Eu-kVJ">
                                         <rect key="frame" x="0.0" y="0.0" width="810" height="176.5"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -804,6 +804,13 @@
                         <viewLayoutGuide key="safeArea" id="GWY-1O-6C5"/>
                     </view>
                     <navigationItem key="navigationItem" id="iot-Vo-VCj"/>
+                    <connections>
+                        <outlet property="banquetOutlet" destination="mVh-Kh-gBK" id="2EW-XA-fjH"/>
+                        <outlet property="birthdayOutlet" destination="79c-6n-hhW" id="BR3-Rc-xhX"/>
+                        <outlet property="graduationOutlet" destination="UU8-BA-t6c" id="WQq-ZO-8fM"/>
+                        <outlet property="holidayOutlet" destination="15h-br-mws" id="UbM-Fb-6mJ"/>
+                        <outlet property="weddingOutlet" destination="QTB-TP-2SU" id="Lh8-sc-OH4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M4w-JN-Vp8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
