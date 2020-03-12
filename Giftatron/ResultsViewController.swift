@@ -29,6 +29,8 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
     var answer2 = ""
     var answer3 = ""
     var answer4 = ""
+    var answer5 = ""
+    
     var smoob = ""
     var product = 0
     var arrayOfAnswers: [String] = []
@@ -123,22 +125,25 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
         }
     }
     func addNewItem() {
-//        let alert = UIAlertController(title: "New Item", message: "enter your item name below", preferredStyle: .alert)
-//        alert.addTextField { (TextField) in
-//            TextField.placeholder = "Price"
-//        }
-//        alert.addTextField { (TextField2) in
-//            TextField2.placeholder = "Name"
-//        }
-//        alert.addTextField { (TextField3) in
-//        }
-//        let OK = UIAlertAction(title: "Go", style: .destructive) { (OK) in
-//            let item = Product(image: UIImage(), price: Double(alert.textFields![0].text!)!, name: alert.textFields![1].text!, url: alert.textFields![2].text!)
-//            //            self.arrayOfProducts.append(item)
-//            self.resultTableView.reloadData()
-//        }
-//        alert.addAction(OK)
-//        present(alert, animated: true, completion: nil)
+        let alert = UIAlertController(title: "New Item", message: "enter your item name below", preferredStyle: .alert)
+        alert.addTextField { (TextField) in
+            TextField.placeholder = "Price"
+        }
+        alert.addTextField { (TextField2) in
+            TextField2.placeholder = "Name"
+        }
+        alert.addTextField { (TextField3) in
+        }
+        let OK = UIAlertAction(title: "Go", style: .destructive) { (OK) in
+            let item = Product(image: UIImage(), price: Double(alert.textFields![0].text!)!, name: alert.textFields![1].text!, url: alert.textFields![2].text!)
+            //            self.arrayOfProducts.append(item)
+            self.resultTableView.reloadData()
+        }
+        let cancel = UIAlertAction(title: "Cancel", style: .destructive, handler: nil)
+        
+        alert.addAction(OK)
+        alert.addAction(cancel)
+        present(alert, animated: true, completion: nil)
     }
     
     func gimmeeBestBuy() {
@@ -250,10 +255,10 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
         print(array)
         let more = array[0]
         string += "salePrice>\(more)&"
-        let less = array[1]
-        if less != "nada" {
-            string += "salePrice<\(less)&"
-        }
+       // let less = array[1]
+//        if less != "nada" {
+//            string += "salePrice<\(less)&"
+//        }
         print(string)
         return string
     }
