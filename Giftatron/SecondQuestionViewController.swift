@@ -65,7 +65,7 @@ class SecondQuestionViewController: UIViewController {
         answer2 = "11-18"
         segue.alpha = 1
         tenEighteenOutlet.setBackgroundImage(UIImage(named: "Yellow Circle"), for: .normal)
-        tenEighteenOutlet.setTitleColor(.systemRed, for: .normal)
+        tenEighteenOutlet.setTitleColor(.red, for: .normal)
         zeroThreeOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
         zeroThreeOutlet.setTitleColor(.black, for: .normal)
         threeTenOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
