@@ -34,22 +34,48 @@ class FifthViewController: UIViewController {
     
     @IBAction func birthday(_ sender: Any) {
         answer5 = "birthday party"
+        birthdayOutlet.backgroundColor = .orange
+        banquetOutlet.backgroundColor = .gray
+        graduationOutlet.backgroundColor = .gray
+        holidayOutlet.backgroundColor = .gray
+        weddingOutlet.backgroundColor = UIColor.gray
     }
     
     @IBAction func banquet(_ sender: Any) {
         answer5 = "banquet"
+        banquetOutlet.backgroundColor = .orange
+        graduationOutlet.backgroundColor = .gray
+        holidayOutlet.backgroundColor = .gray
+        weddingOutlet.backgroundColor = .gray
+        birthdayOutlet.backgroundColor = .gray
+        
     }
     @IBAction func graduation(_ sender: Any) {
     answer5 = "graduation"
-    
+    graduationOutlet.backgroundColor = .orange
+        holidayOutlet.backgroundColor = .gray
+        weddingOutlet.backgroundColor = .gray
+        birthdayOutlet.backgroundColor = .gray
+        banquetOutlet.backgroundColor = .gray
         
     }
     @IBAction func holiday(_ sender: Any) {
         answer5 = "holiday"
+        holidayOutlet.backgroundColor = .orange
+        weddingOutlet.backgroundColor = .gray
+        birthdayOutlet.backgroundColor = .gray
+        banquetOutlet.backgroundColor = .gray
+        graduationOutlet.backgroundColor = .gray
+        
     }
     
     @IBAction func wedding(_ sender: Any) {
         answer5 = "wedding"
+        weddingOutlet.backgroundColor = .orange
+        birthdayOutlet.backgroundColor = .gray
+        banquetOutlet.backgroundColor = .gray
+        graduationOutlet.backgroundColor = .gray
+        holidayOutlet.backgroundColor = .gray
     }
     
     
