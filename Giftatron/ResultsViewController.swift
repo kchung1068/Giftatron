@@ -212,19 +212,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
                         self.arrayOfProducts.append(Gift(name: name, salePrice: salePrice, mobileUrl: URL(string: url)!, image: image, longDescription: longdes))
 //                        print(name + " " + String(salePrice))
                     }
-                    //                    guard let newProduct : NSData = try? NSKeyedArchiver.archivedData(withRootObject: product, requiringSecureCoding: true) as NSData? else { return }
-                    //                    print(newProduct)
-                    //                    let jsonData: NSData = try JSONSerialization.data(withJSONObject: product, options: JSONSerialization.WritingOptions.prettyPrinted) as NSData
-                    //                    print(jsonData)
-                    //                    let products = try JSONDecoder().deacode(Main.self, from: jsonData as Data)
-                    //                    print(products)
-                    //                    for x in products.products {
-                    //                        print(products.products.count)
-                    //                        self.arrayOfProducts.append(x)
-                    //                        let other = x.dt_txt + " " + x.weather.first!.description
-                    //                        self.temperatureData.append(String(x.main.temp) + " " + other)
-                    //                        print(self.temperatureData)
-                    //                    }
+                    
                     DispatchQueue.main.async {
                         self.resultTableView.reloadData()
                     }

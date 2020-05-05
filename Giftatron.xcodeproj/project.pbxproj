@@ -21,6 +21,8 @@
 		1480C2E223A418D400292A97 /* FourthQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480C2E123A418D300292A97 /* FourthQuestionViewController.swift */; };
 		14FDCF20239843BE00D596A7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FDCF1F239843BE00D596A7 /* Product.swift */; };
 		5FDA92FC24181A040070772A /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14875F6E239995160045B89C /* ResultsViewController.swift */; };
+		6252B34E2458FA280062BCCC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6252B34D2458FA280062BCCC /* Person.swift */; };
+		6252B350245913370062BCCC /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6252B34F245913370062BCCC /* ConfirmViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		1480C2E123A418D300292A97 /* FourthQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthQuestionViewController.swift; sourceTree = "<group>"; };
 		14875F6E239995160045B89C /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		14FDCF1F239843BE00D596A7 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		6252B34D2458FA280062BCCC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		6252B34F245913370062BCCC /* ConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,14 +78,16 @@
 			children = (
 				07822F6C239842DC001CDA18 /* AppDelegate.swift */,
 				07822F6E239842DC001CDA18 /* SceneDelegate.swift */,
-				14FDCF1F239843BE00D596A7 /* Product.swift */,
 				07822F72239842DC001CDA18 /* Main.storyboard */,
+				14FDCF1F239843BE00D596A7 /* Product.swift */,
+				6252B34D2458FA280062BCCC /* Person.swift */,
 				07822F70239842DC001CDA18 /* ViewController.swift */,
 				1480C2DB23A4188600292A97 /* firstQuestionViewController.swift */,
 				1480C2DD23A418AB00292A97 /* SecondQuestionViewController.swift */,
 				1480C2DF23A418B900292A97 /* ThirdQuestionViewController.swift */,
 				1480C2E123A418D300292A97 /* FourthQuestionViewController.swift */,
 				07CA12D42419687E006A5A32 /* FifthViewController.swift */,
+				6252B34F245913370062BCCC /* ConfirmViewController.swift */,
 				14875F6E239995160045B89C /* ResultsViewController.swift */,
 				07822F78239842DD001CDA18 /* Assets.xcassets */,
 				07822F7A239842DD001CDA18 /* LaunchScreen.storyboard */,
@@ -165,9 +171,11 @@
 				1480C2DE23A418AB00292A97 /* SecondQuestionViewController.swift in Sources */,
 				07822F77239842DC001CDA18 /* Giftatron.xcdatamodeld in Sources */,
 				1480C2E223A418D400292A97 /* FourthQuestionViewController.swift in Sources */,
+				6252B350245913370062BCCC /* ConfirmViewController.swift in Sources */,
 				07CA12D52419687F006A5A32 /* FifthViewController.swift in Sources */,
 				5FDA92FC24181A040070772A /* ResultsViewController.swift in Sources */,
 				07822F71239842DC001CDA18 /* ViewController.swift in Sources */,
+				6252B34E2458FA280062BCCC /* Person.swift in Sources */,
 				1480C2E023A418B900292A97 /* ThirdQuestionViewController.swift in Sources */,
 				14FDCF20239843BE00D596A7 /* Product.swift in Sources */,
 				07822F6D239842DC001CDA18 /* AppDelegate.swift in Sources */,
@@ -319,6 +327,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U6BF7MZGAA;
 				INFOPLIST_FILE = Giftatron/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -337,6 +346,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U6BF7MZGAA;
 				INFOPLIST_FILE = Giftatron/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
