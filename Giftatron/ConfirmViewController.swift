@@ -25,17 +25,20 @@ class ConfirmViewController: UIViewController {
     
     @IBOutlet var ageLabel: UILabel!
     
+    @IBOutlet var eventLabel: UILabel!
     @IBOutlet var moneyLabel: UILabel!
     @IBOutlet var hobbyLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let friend = Person(name: friendName, age: answer2, gender: answer1, money: answer3, hobby: answer4)
+        let friend = Person(name: friendName, age: answer2, gender: answer1, money: answer3, hobby: answer4, event: answer5)
         nameLabel.text = friend.name
         genderLabel.text = friend.gender
         ageLabel.text = friend.age
         hobbyLabel.text = friend.hobby
         moneyLabel.text = friend.money
+        eventLabel.text = friend.event
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

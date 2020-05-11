@@ -13,15 +13,17 @@ class Person {
     var gender: String
     var money: String
     var hobby: String
+    var event: String
     
     
     
-    init(name:String, age: String, gender: String, money: String, hobby: String) {
+    init(name:String, age: String, gender: String, money: String, hobby: String, event: String) {
         self.name = name
         self.age = age
         self.gender = gender
         self.money = money
         self.hobby = hobby
+        self.event = event
         
     }
     
