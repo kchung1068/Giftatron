@@ -14,6 +14,7 @@ class FifthViewController: UIViewController {
     @IBOutlet weak var holidayOutlet: UIButton!
     @IBOutlet weak var weddingOutlet: UIButton!
     @IBOutlet weak var banquetOutlet: UIButton!
+    @IBOutlet weak var segue: UIButton!
     
     
     var friendName = ""
@@ -29,11 +30,12 @@ class FifthViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        segue.alpha = 0
     }
     
     @IBAction func birthday(_ sender: Any) {
         answer5 = "birthday party"
+        segue.alpha = 1
         birthdayOutlet.backgroundColor = .orange
         banquetOutlet.backgroundColor = .gray
         graduationOutlet.backgroundColor = .gray
@@ -43,39 +45,43 @@ class FifthViewController: UIViewController {
     
     @IBAction func banquet(_ sender: Any) {
         answer5 = "banquet"
-        banquetOutlet.backgroundColor = .orange
-        graduationOutlet.backgroundColor = .gray
-        holidayOutlet.backgroundColor = .gray
-        weddingOutlet.backgroundColor = .gray
-        birthdayOutlet.backgroundColor = .gray
+       segue.alpha = 1
+        banquetOutlet.setBackgroundImage(UIImage(named: "Orange Circle"), for: .normal)
+        graduationOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
+        holidayOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
+        weddingOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
+        birthdayOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
         
     }
     @IBAction func graduation(_ sender: Any) {
-    answer5 = "graduation"
-    graduationOutlet.backgroundColor = .orange
-        holidayOutlet.backgroundColor = .gray
-        weddingOutlet.backgroundColor = .gray
-        birthdayOutlet.backgroundColor = .gray
-        banquetOutlet.backgroundColor = .gray
+        answer5 = "graduation"
+       segue.alpha = 1
+        graduationOutlet.setBackgroundImage(UIImage(named: "Orange Circle"), for: .normal)
+        holidayOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
+        weddingOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
+        birthdayOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
+        banquetOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
         
     }
     @IBAction func holiday(_ sender: Any) {
         answer5 = "holiday"
-        holidayOutlet.backgroundColor = .orange
-        weddingOutlet.backgroundColor = .gray
-        birthdayOutlet.backgroundColor = .gray
-        banquetOutlet.backgroundColor = .gray
-        graduationOutlet.backgroundColor = .gray
+       segue.alpha = 1
+        graduationOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
+        holidayOutlet.setBackgroundImage(UIImage(named: "Orange Circle"), for: .normal)
+        weddingOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
+        birthdayOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
+        banquetOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
         
     }
     
     @IBAction func wedding(_ sender: Any) {
         answer5 = "wedding"
-        weddingOutlet.backgroundColor = .orange
-        birthdayOutlet.backgroundColor = .gray
-        banquetOutlet.backgroundColor = .gray
-        graduationOutlet.backgroundColor = .gray
-        holidayOutlet.backgroundColor = .gray
+       segue.alpha = 1
+        graduationOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
+        holidayOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
+        weddingOutlet.setBackgroundImage(UIImage(named: "Orange Circle"), for: .normal)
+        birthdayOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
+        banquetOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
     }
     
     
