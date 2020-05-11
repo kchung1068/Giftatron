@@ -39,15 +39,23 @@ class ConfirmViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let nvc = segue.destination as! ResultsViewController
-        nvc.friendName = friendName
-        nvc.answer1 = answer1
-        nvc.answer2 = answer2
-        nvc.answer3 = answer3
-        nvc.answer4 = answer4
-        nvc.answer5 = answer5
-        nvc.smoob = smoob
-        nvc.arrayOfAnswers = arrayOfAnswers
+        if segue.identifier == "Results" {
+            var nvc = segue.destination as! ResultsViewController
+            nvc.friendName = friendName
+            nvc.answer1 = answer1
+            nvc.answer2 = answer2
+            nvc.answer3 = answer3
+            nvc.answer4 = answer4
+            nvc.answer5 = answer5
+            nvc.smoob = smoob
+            nvc.arrayOfAnswers = arrayOfAnswers
+        } else
+        {
+            print("Back")
+            
+        }
+        
+        
     }
    
 
