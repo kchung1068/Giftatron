@@ -46,6 +46,13 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
     }
     override func viewDidAppear(_ animated: Bool) {
         navigationController?.navigationBar.topItem?.title = "Showing Results for " + friendName
+        
+        if friendName == "" {
+            navigationController?.navigationBar.topItem?.title = "Showing Results for (N/A)"
+        } else {
+            navigationController?.navigationBar.topItem?.title = "Showing Results for " + friendName
+        }
+        
         //        print(friendName)
     }
     

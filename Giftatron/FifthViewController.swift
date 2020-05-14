@@ -36,11 +36,11 @@ class FifthViewController: UIViewController {
     @IBAction func birthday(_ sender: Any) {
         answer5 = "birthday party"
         segue.alpha = 1
-        birthdayOutlet.backgroundColor = .orange
-        banquetOutlet.backgroundColor = .gray
-        graduationOutlet.backgroundColor = .gray
-        holidayOutlet.backgroundColor = .gray
-        weddingOutlet.backgroundColor = UIColor.gray
+        birthdayOutlet.setBackgroundImage(UIImage(named: "Orange Circle"), for: .normal)
+         banquetOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
+        graduationOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
+        holidayOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
+        weddingOutlet.setBackgroundImage(UIImage(named: "Gray Circle"), for: .normal)
     }
     
     @IBAction func banquet(_ sender: Any) {
