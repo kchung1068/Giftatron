@@ -98,32 +98,77 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
     @IBAction func segmentedControl(_ sender: UISegmentedControl) {
         gimmeeBestBuy()
         
-        
-        
-        
-        
+        //warning, clone project of changes before
         switch sender.selectedSegmentIndex {
         case 0:
             print("Name")
         case 1:
-            var priceString = ""
             var arrayOrganizeOfPrices: [Double] = []
             var newArrayOfProducts: [Gift] = []
             for gift in arrayOfProducts {
-                
                 arrayOrganizeOfPrices.append(gift.salePrice)
                 var highestPoint = arrayOrganizeOfPrices[0]
                 var secondHighestPoint = 0.0
+                var thirdHighestPoint = 0.0
+                var fourthHighestPoint = 0.0
+                var fifthHighestPoint = 0.0
+                var sixthHighestPoint = 0.0
+                var seventhHighestPoint = 0.0
+                var eighthHighestPoint = 0.0
+                var ninthHighestPoint = 0.0
                 var lowestPoint = 0.0
-                
                 for x in arrayOrganizeOfPrices {
                     if x > highestPoint {
                         highestPoint = x
                     }
                 }
+                for l in arrayOrganizeOfPrices {
+                    if l < highestPoint {
+                        lowestPoint = l
+                    }
+                }
                 for y in arrayOrganizeOfPrices {
-                    if y < highestPoint && y > lowestPoint {
+                    if y <= highestPoint && y > arrayOrganizeOfPrices[0] {
                         secondHighestPoint = y
+                    }
+                }
+                
+                for z in arrayOrganizeOfPrices {
+                    if z <= secondHighestPoint && z > arrayOrganizeOfPrices[0]
+                    {
+                        thirdHighestPoint = z
+                    }
+                }
+                
+                for f in arrayOrganizeOfPrices {
+                    if f <= thirdHighestPoint && f > arrayOrganizeOfPrices[0] {
+                        fourthHighestPoint = f
+                    }
+                }
+                
+                for g in arrayOrganizeOfPrices {
+                    if g <= fourthHighestPoint && g > arrayOrganizeOfPrices[0] {
+                        fifthHighestPoint = g
+                    }
+                }
+                for s in arrayOrganizeOfPrices {
+                    if s <= fifthHighestPoint && s > arrayOrganizeOfPrices[0] {
+                        sixthHighestPoint = s
+                    }
+                }
+                for v in arrayOrganizeOfPrices {
+                    if v <= sixthHighestPoint && v > arrayOrganizeOfPrices[0] {
+                        seventhHighestPoint = v
+                    }
+                }
+                for e in arrayOrganizeOfPrices {
+                    if e <= seventhHighestPoint && e > arrayOrganizeOfPrices[0] {
+                        eighthHighestPoint = e
+                    }
+                }
+                for n in arrayOrganizeOfPrices {
+                    if n <= eighthHighestPoint && n > arrayOrganizeOfPrices[0] {
+                        ninthHighestPoint = n
                     }
                 }
                 if gift.salePrice == highestPoint {
@@ -133,6 +178,31 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
                 if gift.salePrice == secondHighestPoint {
                     newArrayOfProducts.append(gift)
                 }
+                if gift.salePrice == thirdHighestPoint {
+                    newArrayOfProducts.append(gift)
+                }
+                if gift.salePrice == fourthHighestPoint {
+                    newArrayOfProducts.append(gift)
+                }
+                if gift.salePrice == fifthHighestPoint {
+                    newArrayOfProducts.append(gift)
+                }
+                if gift.salePrice == sixthHighestPoint {
+                    newArrayOfProducts.append(gift)
+                }
+                if gift.salePrice == seventhHighestPoint {
+                    newArrayOfProducts.append(gift)
+                }
+                if gift.salePrice == eighthHighestPoint {
+                    newArrayOfProducts.append(gift)
+                }
+                if gift.salePrice == ninthHighestPoint {
+                    newArrayOfProducts.append(gift)
+                }
+                if gift.salePrice == lowestPoint {
+                    newArrayOfProducts.append(gift)
+                }
+
                 
             }
             arrayOfProducts = newArrayOfProducts
