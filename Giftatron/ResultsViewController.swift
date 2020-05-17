@@ -93,9 +93,16 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
         return arrayOfProducts.count
     }
     
+  
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if product >= 0 && product <= 9 {
-        if let cell = resultTableView.dequeueReusableCell(withIdentifier: "cell") {
+            
+        if let cell = resultTableView.dequeueReusableCell(withIdentifier: "cell") { //*//
+            
+            
+            
+            
             cell.textLabel?.text = arrayOfProducts[indexPath.row].name
             var url = URL(string: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png")
             if let image = arrayOfProducts[indexPath.row].image {
@@ -108,8 +115,13 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
             return cell
         } else {
             return UITableViewCell()
+            }
         }
-        } else if product == 10 {
+        ///
+            
+            
+            
+        else if product == 10 {
             let cell = resultTableView.dequeueReusableCell(withIdentifier: "cell")
             cell?.textLabel?.text = "Ebay:"
             product += 1
