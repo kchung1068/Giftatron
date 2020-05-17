@@ -35,6 +35,8 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
     var product = 0
     var arrayOfAnswers: [String] = []
     
+    var arrayOfPricesSort: [String] = []
+    var price = ""
     
     @IBOutlet weak var resultTableView: UITableView!
     
@@ -94,16 +96,56 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
     }
     
     @IBAction func segmentedControl(_ sender: UISegmentedControl) {
+        gimmeeBestBuy()
+        
+        
+        
+        
+        
+        switch sender.selectedSegmentIndex {
+        case 0:
+            print("Name")
+        case 1:
+            var priceString = ""
+            var arrayOrganizeOfPrices: [Double] = []
+            var newArrayOfProducts: [Gift] = []
+            for gift in arrayOfProducts {
+                
+                arrayOrganizeOfPrices.append(gift.salePrice)
+                var highestPoint = arrayOrganizeOfPrices[0]
+                var secondHighestPoint = 0.0
+                var lowestPoint = 0.0
+                
+                for x in arrayOrganizeOfPrices {
+                    if x > highestPoint {
+                        highestPoint = x
+                    }
+                }
+                for y in arrayOrganizeOfPrices {
+                    if y < highestPoint && y > lowestPoint {
+                        secondHighestPoint = y
+                    }
+                }
+                if gift.salePrice == highestPoint {
+                    newArrayOfProducts.append(gift)
+                }
+                
+                if gift.salePrice == secondHighestPoint {
+                    newArrayOfProducts.append(gift)
+                }
+                
+            }
+            arrayOfProducts = newArrayOfProducts
+            resultTableView.reloadData()
+            
+        default:
+            print("Default")
+        }
     }
-    
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if product >= 0 && product <= 9 {
             
         if let cell = resultTableView.dequeueReusableCell(withIdentifier: "cell") { //*//
-            
-            
-            
             
             cell.textLabel?.text = arrayOfProducts[indexPath.row].name
             var url = URL(string: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png")
@@ -113,6 +155,9 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
             print(url)
             cell.imageView?.image = UIImage(ciImage: CIImage(contentsOf: url!)!)
             cell.detailTextLabel?.text = "$" + String(arrayOfProducts[indexPath.row].salePrice) + "    " + "\(arrayOfProducts[indexPath.row].mobileUrl)"
+            
+            price = "\(arrayOfProducts[indexPath.row].salePrice)"
+            
             product += 1
             return cell
         } else {
@@ -231,6 +276,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
                         let image = x["image"] as? String
                         let url = x["mobileUrl"] as! String
                         self.arrayOfProducts.append(Gift(name: name, salePrice: salePrice, mobileUrl: URL(string: url)!, image: image, longDescription: longdes))
+                        
 //                        print(name + " " + String(salePrice))
                     }
                     
