@@ -93,7 +93,9 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
         return arrayOfProducts.count
     }
     
-  
+    @IBAction func segmentedControl(_ sender: UISegmentedControl) {
+    }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if product >= 0 && product <= 9 {
