@@ -1268,7 +1268,6 @@
         <image name="money" width="371.27999877929688" height="382.32000732421875"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Xid-VE-Ch1"/>
         <segue reference="GCK-Rh-IrJ"/>
     </inferredMetricsTieBreakers>
 </document>
