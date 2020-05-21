@@ -132,15 +132,6 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
             var priceNine = 0.0
             var priceTen = 0.0
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
             for x in arrayOrganizeOfPrices {
                 if x > highestPoint {
                     highestPoint = x
