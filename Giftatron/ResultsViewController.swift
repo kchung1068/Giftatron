@@ -104,6 +104,8 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
             print("Name")
         case 1:
             var arrayOrganizeOfPrices: [Double] = []
+            var arraySortOfPrices: [Double] = []
+            
             var newArrayOfProducts: [Gift] = []
             for gift in arrayOfProducts {
                 arrayOrganizeOfPrices.append(gift.salePrice)
@@ -118,97 +120,188 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
             var eighthHighestPoint = arrayOrganizeOfPrices[0]
             var ninthHighestPoint = arrayOrganizeOfPrices[0]
             var lowestPoint = arrayOrganizeOfPrices[0]
+            
+            var priceOne = 0.0
+            var priceTwo = 0.0
+            var priceThree = 0.0
+            var priceFour = 0.0
+            var priceFive = 0.0
+            var priceSix = 0.0
+            var priceSeven = 0.0
+            var priceEight = 0.0
+            var priceNine = 0.0
+            var priceTen = 0.0
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             for x in arrayOrganizeOfPrices {
                 if x > highestPoint {
                     highestPoint = x
                 }
+            }
+
+            
+            for y in arrayOrganizeOfPrices {
+                if y < highestPoint && y > secondHighestPoint {
+                    secondHighestPoint = y
+                }
+            }
+        
+            for z in arrayOrganizeOfPrices {
+                if z < secondHighestPoint && z > thirdHighestPoint
+                {
+                    thirdHighestPoint = z
+                }
+                
+            }
+        
+            
+            for f in arrayOrganizeOfPrices {
+                if f < thirdHighestPoint && f > fourthHighestPoint {
+                    fourthHighestPoint = f
+                }
+            }
+        
+            
+            for g in arrayOrganizeOfPrices {
+                if g < fourthHighestPoint && g > fifthHighestPoint {
+                    fifthHighestPoint = g
+                }
+                
+            }
+            for s in arrayOrganizeOfPrices {
+                if s <= fifthHighestPoint && s > sixthHighestPoint {
+                    sixthHighestPoint = s
+                }
+               
+            }
+            for v in arrayOrganizeOfPrices {
+                if v <= sixthHighestPoint && v > seventhHighestPoint {
+                    seventhHighestPoint = v
+                }
+                
+            }
+            for e in arrayOrganizeOfPrices {
+                if e <= seventhHighestPoint && e > eighthHighestPoint {
+                    eighthHighestPoint = e
+                }
+        
+            }
+            for n in arrayOrganizeOfPrices {
+                if n <= eighthHighestPoint && n > ninthHighestPoint {
+                    ninthHighestPoint = n
+                }
+                
             }
             for l in arrayOrganizeOfPrices {
                 if l < lowestPoint {
                     lowestPoint = l
                 }
             }
+   // _____________________________________________________________________________________
+            
+        for x in arrayOrganizeOfPrices {
+            if x == highestPoint {
+                arraySortOfPrices.append(x)
+            }
+            }
             for y in arrayOrganizeOfPrices {
-                if y <= highestPoint && y > secondHighestPoint {
-                    secondHighestPoint = y
+                if y == secondHighestPoint {
+                    arraySortOfPrices.append(y)
                 }
             }
-            
             for z in arrayOrganizeOfPrices {
-                if z <= secondHighestPoint && z > thirdHighestPoint
-                {
-                    thirdHighestPoint = z
+                if z == thirdHighestPoint {
+                    arraySortOfPrices.append(z)
                 }
             }
-            
-            for f in arrayOrganizeOfPrices {
-                if f <= thirdHighestPoint && f > fourthHighestPoint {
-                    fourthHighestPoint = f
-                }
-            }
-            
-            for g in arrayOrganizeOfPrices {
-                if g <= fourthHighestPoint && g > fifthHighestPoint {
-                    fifthHighestPoint = g
+            for f in arrayOrganizeOfPrices  {
+                if f == fourthHighestPoint {
+                    arraySortOfPrices.append(f)
                 }
             }
             for s in arrayOrganizeOfPrices {
-                if s <= fifthHighestPoint && s > sixthHighestPoint {
-                    sixthHighestPoint = s
+                if s == sixthHighestPoint {
+                    arraySortOfPrices.append(s)
                 }
             }
             for v in arrayOrganizeOfPrices {
-                if v <= sixthHighestPoint && v > seventhHighestPoint {
-                    seventhHighestPoint = v
+                if v == seventhHighestPoint {
+                    arraySortOfPrices.append(v)
                 }
             }
+            
             for e in arrayOrganizeOfPrices {
-                if e <= seventhHighestPoint && e > eighthHighestPoint {
-                    eighthHighestPoint = e
+                if e == eighthHighestPoint {
+                    arraySortOfPrices.append(e)
                 }
             }
             for n in arrayOrganizeOfPrices {
-                if n <= eighthHighestPoint && n > ninthHighestPoint {
-                    ninthHighestPoint = n
+                if n == ninthHighestPoint {
+                    arraySortOfPrices.append(n)
                 }
             }
+            for l in arrayOrganizeOfPrices {
+                if l == lowestPoint {
+                    arraySortOfPrices.append(l)
+                }
+            }
+            
+            priceOne = arraySortOfPrices[0]
+            priceTwo =  arraySortOfPrices[1]
+            priceThree = arraySortOfPrices[2]
+            priceFour =  arraySortOfPrices[3]
+            priceFive =  arraySortOfPrices[4]
+            priceSix = arraySortOfPrices[5]
+            priceSeven = arraySortOfPrices[6]
+            priceEight = arraySortOfPrices[7]
+            priceNine = arraySortOfPrices[8]
+            priceTen =  arraySortOfPrices[9]
             for gift in arrayOfProducts {
             
-            if gift.salePrice == highestPoint //&& gift.salePrice != secondHighestPoint
+            if gift.salePrice == priceOne //&& gift.salePrice != secondHighestPoint
             {
                 newArrayOfProducts.append(gift)
             }
             
-            if gift.salePrice == secondHighestPoint && secondHighestPoint != highestPoint {
+            if gift.salePrice == priceTwo &&
+                priceTwo != priceOne {
                 newArrayOfProducts.append(gift)
             } else  {
                 print("")
                 }
                 
-            if gift.salePrice == thirdHighestPoint && thirdHighestPoint != secondHighestPoint && thirdHighestPoint != highestPoint{
+            if gift.salePrice == priceThree && priceThree != priceTwo && priceThree != priceOne{
                 newArrayOfProducts.append(gift)
             } else {
                 
                 }
-                if gift.salePrice == fourthHighestPoint && fourthHighestPoint != thirdHighestPoint && fourthHighestPoint != secondHighestPoint && fourthHighestPoint != highestPoint{
+                if gift.salePrice == priceFour && priceFour != priceThree && priceFour != priceTwo && priceFour != priceOne{
                 newArrayOfProducts.append(gift)
             }
-                if gift.salePrice == fifthHighestPoint && fifthHighestPoint != fourthHighestPoint && fifthHighestPoint != thirdHighestPoint && fifthHighestPoint != secondHighestPoint && fifthHighestPoint != highestPoint {
+                if gift.salePrice == priceFive && priceFive != priceFour && priceFive != priceThree && priceFive != priceTwo && priceFive != priceOne {
                 newArrayOfProducts.append(gift)
             }
-            if gift.salePrice == sixthHighestPoint && sixthHighestPoint != fifthHighestPoint && sixthHighestPoint != fourthHighestPoint && sixthHighestPoint != thirdHighestPoint && sixthHighestPoint != secondHighestPoint && sixthHighestPoint != highestPoint{
+            if gift.salePrice == priceSix && priceSix != priceFive && priceSix != priceFour && priceSix != priceThree && priceSix != priceTwo && priceSix != priceOne{
                 newArrayOfProducts.append(gift)
             }
-            if gift.salePrice == seventhHighestPoint && seventhHighestPoint != sixthHighestPoint && seventhHighestPoint !=  fifthHighestPoint && seventhHighestPoint != fourthHighestPoint && seventhHighestPoint != thirdHighestPoint && seventhHighestPoint != secondHighestPoint && seventhHighestPoint != highestPoint{
+            if gift.salePrice == priceSeven && priceSeven != priceSix && priceSeven !=  priceFive && priceSeven != priceFour && priceSeven != priceThree && priceSeven != priceTwo && priceSeven != priceOne{
                 newArrayOfProducts.append(gift)
             }
-            if gift.salePrice == eighthHighestPoint && eighthHighestPoint != seventhHighestPoint && eighthHighestPoint != sixthHighestPoint && eighthHighestPoint != fifthHighestPoint && eighthHighestPoint != fourthHighestPoint && eighthHighestPoint != thirdHighestPoint && eighthHighestPoint != secondHighestPoint && eighthHighestPoint != highestPoint {
+            if gift.salePrice == priceEight && priceEight != priceSeven && priceEight != priceSix && priceEight != priceFive && priceEight != priceFour && priceEight != priceThree && priceEight != priceTwo && priceEight != priceOne {
                 newArrayOfProducts.append(gift)
             }
-            if gift.salePrice == ninthHighestPoint && ninthHighestPoint != eighthHighestPoint && ninthHighestPoint != seventhHighestPoint && ninthHighestPoint != sixthHighestPoint && ninthHighestPoint != fifthHighestPoint && ninthHighestPoint != fourthHighestPoint && ninthHighestPoint != thirdHighestPoint && ninthHighestPoint != secondHighestPoint && ninthHighestPoint != highestPoint {
+            if gift.salePrice == priceNine && priceNine != priceEight && priceNine != priceSeven && priceNine != priceSix && priceNine != priceFive && priceNine != priceFour && priceNine != priceThree && priceNine != priceTwo && priceNine != priceOne {
                 newArrayOfProducts.append(gift)
             }
-            if gift.salePrice == lowestPoint && lowestPoint < ninthHighestPoint {
+            if gift.salePrice == priceTen && priceTen < priceNine {
                 newArrayOfProducts.append(gift)
             }
                 
@@ -218,7 +311,9 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
             
         default:
             print("Default")
+            
         }
+        
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if product >= 0 && product <= 9 {
@@ -251,7 +346,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
             cell?.textLabel?.text = "Ebay:"
             product += 1
             return cell!
-        }else {
+        }  else {
             if let cell = resultTableView.dequeueReusableCell(withIdentifier: "cell") {
                 cell.textLabel?.text = arrayOfProducts[indexPath.row].name
                 var url = URL(string: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png")
