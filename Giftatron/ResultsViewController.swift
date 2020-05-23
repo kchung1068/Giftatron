@@ -116,8 +116,8 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
             for gift in arrayOfProducts {
                 arrayOrganizeOfPrices.append(gift.salePrice)
             }
+            //
             
-             
             print(arrayOrganizeOfPrices)
             
             var highestPoint = 0.0
