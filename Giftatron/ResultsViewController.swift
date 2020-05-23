@@ -363,7 +363,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
             }
             arrayOfProducts = newArrayOfProducts
             resultTableView.reloadData()
-            
+             
         default:
             print("Default")
             
