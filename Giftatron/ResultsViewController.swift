@@ -141,7 +141,9 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
             for x in arrayOrganizeOfPrices {
                 if x > highestPoint {
                     highestPoint = x
+                    
                 }
+                
             }
             
             
