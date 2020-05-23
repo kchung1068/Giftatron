@@ -37,6 +37,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
     
     var arrayOfPricesSort: [String] = []
     var price = ""
+    var set = true
     
     @IBOutlet weak var resultTableView: UITableView!
     
@@ -44,7 +45,10 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
         super.viewDidLoad()
         resultTableView.delegate = self
         resultTableView.dataSource = self
+        
+        if set == true {
         gimmeeBestBuy()
+        }
     }
     override func viewDidAppear(_ animated: Bool) {
         navigationController?.navigationBar.topItem?.title = "Showing Results for " + friendName
@@ -96,8 +100,10 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
     }
     
     @IBAction func segmentedControl(_ sender: UISegmentedControl) {
+        set = false
+        if set == true {
         gimmeeBestBuy()
-        
+    }
         //warning, clone project of changes before
         switch sender.selectedSegmentIndex {
         case 0:
@@ -334,7 +340,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
             
         else if product == 10 {
             let cell = resultTableView.dequeueReusableCell(withIdentifier: "cell")
-            cell?.textLabel?.text = "Ebay:"
+            cell?.textLabel?.text = ""
             product += 1
             return cell!
         }  else {
