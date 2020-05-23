@@ -117,7 +117,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
                 arrayOrganizeOfPrices.append(gift.salePrice)
             }
             
-            print(arrayOfProducts)
+             
             print(arrayOrganizeOfPrices)
             
             var highestPoint = 0.0
@@ -363,7 +363,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
             }
             arrayOfProducts = newArrayOfProducts
             resultTableView.reloadData()
-             
+            
         default:
             print("Default")
             
