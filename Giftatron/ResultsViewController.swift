@@ -248,7 +248,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
             }
             for v in arrayOrganizeOfPrices {
                 if v == fifthHighestPoint && fifthHighestPoint != 0.0 {
-                    arrayOrganizeOfPrices.append(v)
+                    arraySortOfPrices.append(v)
                 }
             }
             for s in arrayOrganizeOfPrices {
@@ -371,7 +371,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
         
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if product >= 0 && product <= 9 {
+//        if product >= 0 && product <= 10 {
             
             if let cell = resultTableView.dequeueReusableCell(withIdentifier: "cell") { //*//
                 
@@ -391,31 +391,32 @@ class ResultsViewController: UIViewController, UITableViewDataSource,UITableView
             } else {
                 return UITableViewCell()
             }
-        }
+//        }
             
             
             
-        else if product == 10 {
-            let cell = resultTableView.dequeueReusableCell(withIdentifier: "cell")
-            cell?.textLabel?.text = ""
-            product += 1
-            return cell!
-        }  else {
-            if let cell = resultTableView.dequeueReusableCell(withIdentifier: "cell") {
-                cell.textLabel?.text = arrayOfProducts[indexPath.row].name
-                var url = URL(string: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png")
-                if let image = arrayOfProducts[indexPath.row].image {
-                    url = URL(string: image)
-                }
-                //                print(url)
-                cell.imageView?.image = UIImage(ciImage: CIImage(contentsOf: url!)!)
-                cell.detailTextLabel?.text = "$" + String(arrayOfProducts[indexPath.row].salePrice) + "    " + "\(arrayOfProducts[indexPath.row].mobileUrl)"
-                product += 1
-                return cell
-            } else {
-                return UITableViewCell()
-            }
-        }
+//        else if product == 10 {
+//            if let cell = resultTableView.dequeueReusableCell(withIdentifier: "cell") {
+//            cell.textLabel?.text = arrayOfProducts[indexPath.row].name
+//
+//
+//
+//
+//                cell.textLabel?.text = arrayOfProducts[indexPath.row].name
+//                var url = URL(string: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png")
+//                if let image = arrayOfProducts[indexPath.row].image {
+//                    url = URL(string: image)
+//                }
+//                //                print(url)
+//                cell.imageView?.image = UIImage(ciImage: CIImage(contentsOf: url!)!)
+//                cell.detailTextLabel?.text = "$" + String(arrayOfProducts[indexPath.row].salePrice) + "    " + "\(arrayOfProducts[indexPath.row].mobileUrl)"
+//                product += 1
+//                return cell
+//            } else {
+//                return UITableViewCell()
+//            }
+//        }
+//        return UITableViewCell()
     }
     func addNewItem() {
         arrayOfAnswers.removeAll()
